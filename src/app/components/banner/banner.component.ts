@@ -7,11 +7,18 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
+  miPortfolio: any;
   constructor(private portfolioService: PortfolioService) {
     
   }
   ngOnInit(): void {
-    this.portfolioService.obtenerDatos();
+    this.portfolioService.obtenerDatos().subscribe(data => {
+      console.log(data);
+      
+      this.miPortfolio=data;
+      console.log(this.miPortfolio);
+      
+    });
     
   }
 }

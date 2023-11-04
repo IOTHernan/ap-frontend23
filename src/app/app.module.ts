@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     BannerComponent,
     NavbarComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,8 @@
 {
-	"id": 1,
 			"persona": [
 				{
 					"id": "1",
-					"nombres": "Hernan Canestraro",
+					"nombres": "Hernan E. Canestraro",
 					"apellido": "Hernan Canestraro",
 					"fecha_nacimiento": "27/09/1976",
 					"nacionalidad": "Argentino",
