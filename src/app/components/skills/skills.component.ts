@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
-  selector: 'app-educacion',
-  templateUrl: './educacion.component.html',
-  styleUrls: ['./educacion.component.css']
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.css']
 })
-export class EducacionComponent implements OnInit{
+export class SkillsComponent  implements OnInit {
   miPortfolio: any;
   constructor(private portfolioService: PortfolioService) {
     
@@ -15,7 +15,7 @@ export class EducacionComponent implements OnInit{
     this.portfolioService.obtenerDatos().subscribe(data => {
       console.log(data);
       
-      this.miPortfolio=data.educacion;
+      this.miPortfolio=data.skills;
       console.log(this.miPortfolio);
       
     });

@@ -1,14 +1,12 @@
 <div class="card mat-card">
-	<h1 class="align-items-center text-center shadow">Educación</h1>
+	<h1 class="align-items-center text-center shadow">Skills</h1>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
 			<div id="edulist" class="border m-3 p-2">
-				<!-- <div class="d-flex container-fluid row ma-3 align-items-center"> -->
-					<!-- <div class="d-flex flex-row-reverse"> -->
-				<div class="flex-container">
-					<div class="row flex-row-reverse">
+				<div class="d-flex container-fluid row ma-3 align-items-center">
+					<div class="d-flex flex-row-reverse">
 						<div class="p-2 border">
-							<a href="#"><img class="logos"
+							<a href="#" class="btn btn-primary"><img class="logos"
 									src="../../../assets/media/logoPencil.png"></a>
 						</div>
 						<div class="p-2 border">
@@ -17,16 +15,12 @@
 						</div>
 					</div>
 					<!-- <div class="d-flex col align-items-center justify-content-center -webkit-fill-available"> -->
-					<!-- <div class="d-flex"> -->
-						<!-- <div class="flex-container"> -->
-							<!-- <div class="row"> -->
-						<!-- <div class="flex-shrink-0 border justify-content-center align-items-center w-30"> -->
-							<div class="column" style="flex: 35%;">
-								<img [src]="miP.imagen" alt="" class="border m-2">
-							</div>
+					<div class="d-flex">
+						<div class="flex-shrink-0 border justify-content-center align-items-center w-30">
+							<img [src]="miP.imagen" alt="" class="border m-2">
+						</div>
 						<!-- <div class="col p-2 m-2 border flex-grow-1"> -->
-							<!-- <div class="flex-grow-1 ms-3 border m-1"> -->
-								<div class="column" style="flex: 65%;">
+							<div class="flex-grow-1 ms-3 border m-1">
 								<p><b>Escuela:</b> {{miP.escuela}}</p>
 								<p><b>Titulo:</b> {{miP.titulo}}</p>
 								<p><b>Carrera:</b>{{miP.carrera}}</p>
@@ -37,7 +31,7 @@
 						</div>
 				</div>
 
-			<!-- </div> -->
+			</div>
 		</li>
 	</ul>
 </div>

@@ -10,6 +10,10 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SoftskillsComponent } from './components/softskills/softskills.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,11 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     NavbarComponent,
     ExperienciaComponent,
     EducacionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SkillsComponent,
+    SoftskillsComponent,
+    ProyectosComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
