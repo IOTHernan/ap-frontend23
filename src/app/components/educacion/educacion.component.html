@@ -1,43 +1,34 @@
-<div class="card mat-card">
+<div class="card mat-card" id="educacionFirstCard">
 	<h1 class="align-items-center text-center shadow">Educación</h1>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
 			<div id="edulist" class="border m-3 p-2">
-				<!-- <div class="d-flex container-fluid row ma-3 align-items-center"> -->
-					<!-- <div class="d-flex flex-row-reverse"> -->
 				<div class="flex-container">
 					<div class="row flex-row-reverse">
 						<div class="p-2 border">
-							<a href="#"><img class="logos"
+							<a href="#" class="btn btn-primary btn-sm"><img class="logos"
 									src="../../../assets/media/logoPencil.png"></a>
 						</div>
 						<div class="p-2 border">
-							<a href="#" class="btn btn-primary"><img class="logos"
+							<a href="#" class="btn btn-primary btn-sm"><img class="logos"
 									src="../../../assets/media/logoDelete.png"></a>
 						</div>
 					</div>
-					<!-- <div class="d-flex col align-items-center justify-content-center -webkit-fill-available"> -->
-					<!-- <div class="d-flex"> -->
-						<!-- <div class="flex-container"> -->
-							<!-- <div class="row"> -->
-						<!-- <div class="flex-shrink-0 border justify-content-center align-items-center w-30"> -->
-							<div class="column" style="flex: 35%;">
-								<img [src]="miP.imagen" alt="" class="border m-2">
-							</div>
-						<!-- <div class="col p-2 m-2 border flex-grow-1"> -->
-							<!-- <div class="flex-grow-1 ms-3 border m-1"> -->
-								<div class="column" style="flex: 65%;">
-								<p><b>Escuela:</b> {{miP.escuela}}</p>
-								<p><b>Titulo:</b> {{miP.titulo}}</p>
-								<p><b>Carrera:</b>{{miP.carrera}}</p>
-								<p><b>Puntaje:</b>{{miP.puntaje}}</p>
-								<p><b>Inicio: </b>{{miP.inicio}}</p>
-								<p><b>Fin: </b>{{miP.fin}}</p>
-							</div>
-						</div>
 				</div>
-
-			<!-- </div> -->
+				<div class="column" style="flex: 35%;">
+					<div class="flex-shrink-0 border justify-content-center align-items-center" style="flex: 35%;">
+						<img [src]="miP.imagen" alt="" class="border m-2">
+					</div>
+					<div class="column align-items-start" style="flex: 65%;">
+						<p><b>Escuela:</b> {{miP.escuela}}</p>
+						<p><b>Titulo:</b> {{miP.titulo}}</p>
+						<p><b>Carrera:</b>{{miP.carrera}}</p>
+						<p><b>Puntaje:</b>{{miP.puntaje}}</p>
+						<p><b>Inicio: </b>{{miP.inicio}}</p>
+						<p><b>Fin: </b>{{miP.fin}}</p>
+					</div>
+				</div>
+			</div>
 		</li>
 	</ul>
 </div>

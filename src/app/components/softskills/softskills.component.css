@@ -1,0 +1,33 @@
+ul {
+	list-style-type: none;
+}
+.logos {
+	width: 40px;
+	height: 40px;
+}
+.mat-card {
+    border-radius: 32px;
+    margin: 20px 10px;
+    padding: 50px;
+    border: 3px solid blue;
+}
+.mat-card#softSkillsFirst-card {
+    padding: 0;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* Ajusta la altura como desees */
+  }
+  
+  .row {
+	display: flex;
+	width: 100%;
+  }
+  
+  .column {
+	border: 1px solid #ccc; /* Borde para resaltar las columnas */
+	padding: 10px;
+	text-align: center;
+  }

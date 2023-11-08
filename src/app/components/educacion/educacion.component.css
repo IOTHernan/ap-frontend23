@@ -3,9 +3,19 @@ ul {
 }
 
 .logos {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 3%;
 }
+.mat-card {
+    border-radius: 32px;
+    margin: 20px 10px;
+    padding: 50px;
+    border: 3px solid blue;
+}
+.mat-card#educacionFirst-card {
+    padding: 0;
+}
+
 .flex-container {
 	display: flex;
 	flex-direction: column;
@@ -22,3 +32,10 @@ ul {
 	padding: 10px;
 	text-align: center;
   }
+
+@media (max-width: 570px) {
+.logos {
+	width: 20px;
+	height: 20px;
+}  
+}

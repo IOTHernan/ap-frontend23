@@ -1,9 +1,70 @@
-#logointi {
-    width: 50px;
-    height: 35px;
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.varText {
+    display: contents;
+    width: fit-content;
+}
+.logointi {
+    width: 150px;
+    height: 40px;
 }
 
 .logos {
     width: 40px;
     height: 40px;
+}
+
+@media (max-width: 320px) {
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoInti {
+        width: 50px;
+        height: 35px;
+    }
+    .logos {
+        width: 20px;
+        height: 20px;
+    }
+    .varText {
+        font-size: small;
+    }
+    .div .varBotton {
+        display: contents;
+        width: 68px;
+    }
+}
+@media (max-width: 768px) {
+    .logos {
+        width: 30px;
+        height: 30px;
+    }  
+    .logoInti {
+        width: 100px;
+        height: 45px;
+    }
+    .logos {
+        width: 20px;
+        height: 20px;
+    }
+    .varText {
+        font-size: medium;
+    }
+    .div .varBotton {
+        display: contents;
+        width: 68px;
+    }
 }
