@@ -55,7 +55,8 @@
 				{
 					"escuela": "Argentina Programa, MINDHUB",
 					"titulo": "FullStack FrontEnd Jr.",
-					"imagen": "https://www.ort.edu.ar/img/LogoOrtArgWeb2017.jpg",
+				
+					"imagen": "../../../assets/media/chemindhub.png",
 					"carrera": "Programación web",
 					"puntaje": 70,
 					"inicio": "2023",

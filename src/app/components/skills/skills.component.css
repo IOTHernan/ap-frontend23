@@ -1,14 +1,3 @@
-ul {
-	list-style-type: none;
-}
-.logos {
-	width: 30px;
-	height: 30px;
-}
-.imgSkill {
-	width: 175px;
-	height: 175px;
-}
 .mat-card {
     border-radius: 32px;
     margin: 5px 5px;
@@ -20,24 +9,3 @@ ul {
 	border: 3px solid blue;
 	padding: 0;
 }
-h4 {
-	margin-top: 5px;
-	margin-left: 10px;
-}
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	width: 95%;
-	height: 100vh; /* Ajusta la altura como desees */
-  }
-  
-  .row {
-	display: flex;
-	width: 100%;
-  }
-  
-  .column {
-	border: 1px solid #ccc; /* Borde para resaltar las columnas */
-	padding: 10px;
-	text-align: center;
-  }

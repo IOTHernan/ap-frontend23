@@ -1,4 +1,4 @@
-#flex-container {
+/* #flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -7,7 +7,7 @@
 	align-items: center;
 	padding: 0;
 	width: 98.5vw;
-}
+} */
 
 .varText {
 	display: contents;

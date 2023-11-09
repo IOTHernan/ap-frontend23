@@ -1,117 +1,28 @@
-.imgEducacion {
-	width: 8rem;
-	height: 9rem;
-}
-
 #educacionFirstCard {
-	width: 90vw;
+	width: 99vw;
 	left: 0;
 	border: 2px solid blueviolet;
     padding: 0;
 }
 
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	height: auto; /* Ajusta la altura como desees */
-	border: 2px solid rgb(0, 255, 132);
-  }
-  
-  .row {
-	display: flex;
-	margin: 0 0 0 0;
-	padding: 0;
-	width: 89vw;
-  }
-  
-  .column {
-	border: 1px solid #000; /* Borde para resaltar las columnas */
-	padding: 10px;
-  }
-  .logos {
-	width: 15px;
-	height: auto;
-  }
-
-  @media only screen and (max-width: 319px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 2.5rem;
-		height: 2.5rem;
-	}	
+@media only screen and (max-width: 319px) {
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 7rem;
-		height: 7rem;
-	}	
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 9rem;
-		height: 9rem;
-	}	
-
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 17rem;
-		height: 17rem;
-	}	
 	.text {
 		text-align: center;
 	}
-	p {
-		font-size: larger;
-	}
-	
 }
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 17rem;
-		height: 17rem;
-	}	
 	.text {
 		text-align: center;
 	}
-	p {
-		font-size: larger;
-	}
-	
 }
 @media only screen and (min-width: 2560px) {
-	.logos {
-		width: 20px;
-		height: 20px;
-	}
-	.imgEducacion {
-		width: 17rem;
-		height: 17rem;
-	}	
 	.text {
 		text-align: center;
 	}
-	p {
-		font-size: larger;
-	}
-	
 }

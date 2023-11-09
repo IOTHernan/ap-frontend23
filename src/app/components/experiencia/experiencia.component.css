@@ -1,56 +1,20 @@
-
 .mat-card {
-    border-radius: 32px;
-    margin: 5px 5px;
-    padding: 0;
-    border: 3px solid blue;
-}
-#experienciaFirstCard {
-	width: 95%;
-	margin-top: 10px;
-    padding: 0;
+	border-radius: 32px;
+	margin: 5px 5px;
+	padding: 0;
+	border: 3px solid blue;
 }
 
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	height: 100vh; /* Ajusta la altura como desees */
-  }
-  
-  .row {
-	display: flex;
-	width: 100%;
-  }
-  
-  .column {
-	border: 1px solid #ccc; /* Borde para resaltar las columnas */
-	padding: 10px;
-	text-align: center;
-  }
-	@media only screen and (max-width: 319px) {
-		.imgProyecto {
-			width: 75px;
-			height: 75px;
-		}	
+
+/* @media only screen and (max-width: 319px) {}
+@media only screen and (min-width: 320px) and (max-width: 767px) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+ */@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	body {
+		font-size: larger;
 	}
-	@media only screen and (min-width: 320px) and (max-width: 767px) {
-		.imgProyecto {
-			width: 75px;
-			height: 75px;
-		}	
+
+	.text {
+		text-align: center;
 	}
-	@media only screen and (min-width: 768px) and (max-width: 1023px) {
-	
-	}
-	@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-		body {
-			font-size: larger;
-		}
-		.text {
-			text-align: center;
-		}
-		p {
-			font-size: larger;
-		}
-		
-	}	
+}

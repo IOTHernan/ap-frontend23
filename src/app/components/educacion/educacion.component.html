@@ -8,7 +8,6 @@
 	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div class="d-flex flex-container container-fluid">
 				<div class="row box1">
 					<div class="d-flex justify-content-end border">
 						<div class="p-1">
@@ -22,7 +21,8 @@
 						</div>
 					</div>
 
-					<div class="column" style="width: 25%;">
+					<div id="imgEducacion" class="column img" style="width: 25%;">
+						<!-- <img [src]="miP.imagen" alt="" class="imgEducacion border"> -->
 						<img [src]="miP.imagen" alt="" class="imgEducacion border">
 					</div>
 					<div class="column" style="width: 75%;">
@@ -34,7 +34,7 @@
 						<p><b>Fin: </b>{{miP.fin}}</p>
 					</div>
 				</div>
-			</div>
-		</li>
+<!-- 			</div>
+ -->		</li>
 	</ul>
 </div>

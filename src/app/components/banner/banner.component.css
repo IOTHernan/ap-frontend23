@@ -41,6 +41,7 @@ div#info-contact {
 }
 
 .profile-image {
+    background-color: black;
     border-radius: 50%;
     width: 152px;
     height: 152px;

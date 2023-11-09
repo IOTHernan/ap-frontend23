@@ -8,27 +8,25 @@
 	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div class="d-flex flex-container container-fluid">
-				<div class="row box1">
-					<div class="d-flex justify-content-end border">
-						<div class="p-1">
-							<button class="btn p-0 m-1"><span><img class="logos"
-										src="../../../assets/media/logoPencil.png"></span>
-							</button>
-						</div>
-						<div class="p-1">
-							<button class="btn p-0 m-1"><span><img class="logos"
-										src="../../../assets/media/logoDelete.png"></span></button>
-						</div>
+			<div class="row box1">
+				<div class="d-flex justify-content-end border">
+					<div class="p-1">
+						<button class="btn p-0 m-1"><span><img class="logos"
+									src="../../../assets/media/logoPencil.png"></span>
+						</button>
 					</div>
+					<div class="p-1">
+						<button class="btn p-0 m-1"><span><img class="logos"
+									src="../../../assets/media/logoDelete.png"></span></button>
+					</div>
+				</div>
 
-					<div class="column" style="width: 25%;">
-						<img [src]="miP.imagen" alt="" class="imgSoftskills border m-2.5">
-					</div>
-					<div class="column" style="width: 75%;">
-						<p><b>Nombre:</b> {{miP.nombre}}</p>
-						<p><b>Nivel:</b>{{miP.nivel}}</p>
-					</div>
+				<div class="column" style="width: 25%;">
+					<img [src]="miP.imagen" alt="" class="imgSoftSkills border">
+				</div>
+				<div class="column" style="width: 75%;">
+					<p><b>Nombre:</b> {{miP.nombre}}</p>
+					<p><b>Nivel:</b>{{miP.nivel}}</p>
 				</div>
 			</div>
 		</li>
