@@ -14,6 +14,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { SoftskillsComponent } from './components/softskills/softskills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     SkillsComponent,
     SoftskillsComponent,
     ProyectosComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

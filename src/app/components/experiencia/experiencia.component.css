@@ -1,17 +1,13 @@
-ul {
-	list-style-type: none;
-}
-.logos {
-	width: 40px;
-	height: 40px;
-}
+
 .mat-card {
     border-radius: 32px;
-    margin: 20px 10px;
-    padding: 50px;
+    margin: 5px 5px;
+    padding: 0;
     border: 3px solid blue;
 }
-.mat-card#experienciaFirst-card {
+#experienciaFirstCard {
+	width: 95%;
+	margin-top: 10px;
     padding: 0;
 }
 
@@ -31,3 +27,30 @@ ul {
 	padding: 10px;
 	text-align: center;
   }
+	@media only screen and (max-width: 319px) {
+		.imgProyecto {
+			width: 75px;
+			height: 75px;
+		}	
+	}
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		.imgProyecto {
+			width: 75px;
+			height: 75px;
+		}	
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	
+	}
+	@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+		body {
+			font-size: larger;
+		}
+		.text {
+			text-align: center;
+		}
+		p {
+			font-size: larger;
+		}
+		
+	}	

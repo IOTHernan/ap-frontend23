@@ -1,53 +1,116 @@
-ul {
-	list-style-type: none;
-}
-.logos {
-	width: 30px;
-	height: 30px;
-}
 .imgProyecto {
-	width: 175px;
-	height: 175px;
+	width: 8rem;
+	height: 9rem;
 }
+
+#proyectosFirstCard {
+	width: 90vw;
+	border-radius: 32px;
+	border: 3px solid blue;
+	padding: 0;
+}
+
 .mat-card {
-    border-radius: 32px;
-    margin: 5px 5px;
-    padding: 10px;
-    border: 3px solid blue;
+	border-radius: 32px;
+	margin: 5px 5px;
+	padding: 0;
+	border: 3px solid blue;
 }
-.mat-card#proyectosFirst-card {
-    padding: 0;
-}
+
 h4 {
 	margin-top: 5px;
 	margin-left: 10px;
 }
+
 .flex-container {
 	display: flex;
 	flex-direction: column;
-	height: 100vh; /* Ajusta la altura como desees */
-  }
-  
-  .row {
+	height: auto;
+	/* Ajusta la altura como desees */
+}
+
+.row {
 	display: flex;
 	width: 100%;
-  }
-  
-  .column {
-	border: 1px solid #ccc; /* Borde para resaltar las columnas */
-	padding: 10px;
-	text-align: center;
-  }
+}
 
-@media (max-width: 570px) {
+.column {
+	border: 1px solid #ccc;
+	/* Borde para resaltar las columnas */
+	padding: 0;
+}
+
+@media only screen and (max-width: 319px) {
 	.logos {
-		width: 20px;
-		height: 20px;
+		width: 1.5rem;
+		height: 1.5rem;
 	}
+
 	.imgProyecto {
-		width: 75px;
-		height: 75px;
+		width: 2.5rem;
+		height: 2.5rem;
 	}
-	
-	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.imgProyecto {
+		width: 7rem;
+		height: 7rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.imgProyecto {
+		width: 9rem;
+		height: 9rem;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.imgProyecto {
+		width: 17rem;
+		height: 17rem;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	p {
+		font-size: larger;
+	}
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+	.imgProyecto {
+		width: 17rem;
+		height: 17rem;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	p {
+		font-size: larger;
+	}
+
+}
+
+@media only screen and (min-width: 2560px) {
+	.imgProyecto {
+		width: 17rem;
+		height: 17rem;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	p {
+		font-size: larger;
+	}
+
 }

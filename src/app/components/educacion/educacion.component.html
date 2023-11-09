@@ -1,25 +1,31 @@
-<div class="card mat-card" id="educacionFirstCard">
+<div id="educacionFirstCard" class="p-2">
 	<h1 class="align-items-center text-center shadow">Educación</h1>
+	<div class="d-flex justify-content-center box1">
+		<button class="btn btn-green border shadow text-center fw-bold">
+			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
+					class="logos mt-1 bg-blue rounded-circle">AGREGAR EDUCACIÓN</span>
+		</button>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div id="edulist" class="border m-3 p-2">
-				<div class="flex-container">
-					<div class="row flex-row-reverse">
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary btn-sm"><img class="logos"
-									src="../../../assets/media/logoPencil.png"></a>
+			<div class="d-flex flex-container container-fluid">
+				<div class="row box1">
+					<div class="d-flex justify-content-end border">
+						<div class="p-1">
+							<button class="btn p-0 m-1"><span><img class="logos"
+										src="../../../assets/media/logoPencil.png"></span>
+							</button>
 						</div>
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary btn-sm"><img class="logos"
-									src="../../../assets/media/logoDelete.png"></a>
+						<div class="p-1">
+							<button class="btn p-0 m-1"><span><img class="logos"
+										src="../../../assets/media/logoDelete.png"></span></button>
 						</div>
 					</div>
-				</div>
-				<div class="column" style="flex: 35%;">
-					<div class="flex-shrink-0 border justify-content-center align-items-center" style="flex: 35%;">
-						<img [src]="miP.imagen" alt="" class="border m-2">
+
+					<div class="column" style="width: 25%;">
+						<img [src]="miP.imagen" alt="" class="imgEducacion border">
 					</div>
-					<div class="column align-items-start" style="flex: 65%;">
+					<div class="column" style="width: 75%;">
 						<p><b>Escuela:</b> {{miP.escuela}}</p>
 						<p><b>Titulo:</b> {{miP.titulo}}</p>
 						<p><b>Carrera:</b>{{miP.carrera}}</p>

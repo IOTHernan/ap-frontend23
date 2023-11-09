@@ -11,5 +11,11 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+		let tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+		for (let i of tooltips) {
+			new bootstrap.Tooltip(i);
+		}
+	</script>
 </body>
 </html>

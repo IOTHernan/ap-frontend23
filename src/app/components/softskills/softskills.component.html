@@ -1,27 +1,33 @@
-<div class="card mat-card" id="softskillsFirstCard">
+<div id="softSkillsFirstCard" class="p-2">
 	<h1 class="align-items-center text-center shadow">Hard & SoftSkills</h1>
+	<div class="d-flex justify-content-center box1">
+		<button class="btn btn-green border shadow text-center fw-bold">
+			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
+					class="logos mt-1 bg-blue rounded-circle">AGREGAR SOFTSKILLS</span>
+		</button>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div id="softskillsList" class="border m-3 p-2">
-				<div class="flex-container">
-					<div class="row flex-row-reverse">
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary"><img class="logos"
-									src="../../../assets/media/logoPencil.png"></a>
+			<div class="d-flex flex-container container-fluid">
+				<div class="row box1">
+					<div class="d-flex justify-content-end border">
+						<div class="p-1">
+							<button class="btn p-0 m-1"><span><img class="logos"
+										src="../../../assets/media/logoPencil.png"></span>
+							</button>
 						</div>
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary"><img class="logos"
-									src="../../../assets/media/logoDelete.png"></a>
+						<div class="p-1">
+							<button class="btn p-0 m-1"><span><img class="logos"
+										src="../../../assets/media/logoDelete.png"></span></button>
 						</div>
 					</div>
-					<div class="d-flex">
-						<div class="flex-shrink-0 border justify-content-center align-items-center w-30">
-							<img [src]="miP.imagen" alt="" class="border m-2">
-						</div>
-						<div class="flex-grow-1 ms-3 border m-1">
-							<p><b>Nombre:</b> {{miP.nombre}}</p>
-							<p><b>Nivel:</b>{{miP.nivel}}</p>
-						</div>
+
+					<div class="column" style="width: 25%;">
+						<img [src]="miP.imagen" alt="" class="imgSoftskills border m-2.5">
+					</div>
+					<div class="column" style="width: 75%;">
+						<p><b>Nombre:</b> {{miP.nombre}}</p>
+						<p><b>Nivel:</b>{{miP.nivel}}</p>
 					</div>
 				</div>
 			</div>

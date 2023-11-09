@@ -1,13 +1,5 @@
-.logos {
-    width: 40px;
-    height: 40px;
-}
-
 .mat-card {
-    width: 100%;
     border-radius: 32px;
-    margin: 5px 5px;
-    padding: 5px;
     border: 3px solid blue;
 }
 .mat-card#first-card {
@@ -68,10 +60,6 @@ div#info-contact {
     div#info-actions button {
         bottom: auto;
     }
-        .logos {
-        width: 20px;
-        height: 20px;
-    }  
     .profile-image {
         border-radius: 50%;
         width: 52px;
@@ -83,14 +71,9 @@ div#info-contact {
         width: 35%;
         height: 35%;
     }
-    
-
-}
+    }
 @media (max-width: 768px) {
-    .logos {
-        width: 30px;
-        height: 30px;
-    }  
+
     .profile-image {
         border-radius: 50%;
         width: 52px;

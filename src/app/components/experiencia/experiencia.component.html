@@ -1,31 +1,39 @@
-<div class="card mat-card" id="experienciaFirstCard">
+<div id="experienciaFirstCard">
 	<h1 class="align-items-center text-center shadow">Experiencia</h1>
+	<div class="d-flex justify-content-center box1">
+		<button class="btn btn-green border shadow text-center fw-bold">
+			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar experiencia..."
+					class="logos mt-1 bg-blue rounded-circle">AGREGAR EXPERIENCIA</span>
+		</button>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio ">
-			<div id="experiencialist" class="border m-3 p-2">
-				<div class="flex-container">
-					<div class="row flex-row-reverse">
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary"><img class="logos"
-									src="../../../assets/media/logoPencil.png"></a>
-						</div>
-						<div class="p-2 border">
-							<a href="#" class="btn btn-primary"><img class="logos"
-									src="../../../assets/media/logoDelete.png"></a>
-						</div>
+			<!-- <div class="d-flex flex-container container-fluid"> -->
+
+			<div class="row box1">
+				<div class="d-flex justify-content-end border">
+					<div class="p-1">
+						<button class="btn p-0 m-1"><span><img class="logos"
+									src="../../../assets/media/logoPencil.png"></span>
+						</button>
 					</div>
-					<div class="column" style="flex: 35%;">
-						<img [src]="miP.imagen" alt="" class="border m-2">
-					</div>
-					<div class="column" style="flex: 65%;">
-						<p><b>Ubicacion:</b> {{miP.ubicacion}}</p>
-						<p><b>Puesto:</b> {{miP.puesto}}</p>
-						<p><b>Periodo:</b>{{miP.periodo}}</p>
-						<p><b>Empresa:</b>{{miP.empresa}}</p>
-						<p><b>Actividades: </b>{{miP.actividades}}</p>
+					<div class="p-1">
+						<button class="btn p-0 m-1"><span><img class="logos"
+									src="../../../assets/media/logoDelete.png"></span></button>
 					</div>
 				</div>
+				<div class="column" style="width: 25%;">
+					<img [src]="miP.imagen" alt="" class="imgExperiencia border m-2">
+				</div>
+				<div class="column" style="width: 75%;">
+					<p><b>Ubicacion:</b> {{miP.ubicacion}}</p>
+					<p><b>Puesto:</b> {{miP.puesto}}</p>
+					<p><b>Periodo:</b>{{miP.periodo}}</p>
+					<p><b>Empresa:</b>{{miP.empresa}}</p>
+					<p><b>Actividades: </b>{{miP.actividades}}</p>
+				</div>
 			</div>
+			<!-- </div> -->
 		</li>
 	</ul>
 </div>

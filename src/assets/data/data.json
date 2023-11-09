@@ -68,70 +68,75 @@
 					"puesto": "Pastas Anita",
 					"periodo": "Agosto 2020 - Febrero 2021",
 					"empresa": "IBM",
-					"actividades": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
+					"actividades": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo",
+					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
+
 				},
 				{
 					"ubicacion": "Administrador de Finanzas",
 					"puesto": "Pastas Anita",
 					"periodo": "Agosto 2020 - Febrero 2021",
 					"empresa": "IBM",
-					"actividades": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
+					"actividades": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo",
+					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
+
 				},
 				{
 					"ubicacion": "Defensoría del Pueblo de La Matanza",
 					"puesto": "Entrada",
 					"periodo": "Octubre 2021",
 					"empresa": "Municipio de La Matanza",
-					"actividades": "Atención al público.Tareas generales"
+					"actividades": "Atención al público.Tareas generales",
+					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
 				}
 			],
 			"skills": [
 				{
-					"descripcion": "SoftSkills... Description...",
+					"descripcion": "SoftSkills... 111111111111...",
 					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
 				},
 				{
-					"description": "SoftSkills... Description...",
+					"descripcion": "SoftSkills... 222222222222...",
 					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
 				},
 				{
-					"description": "SoftSkills... Description...",
+					"descripcion": "SoftSkills... Description... 333333333333",
 					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
 				},
 				{
-					"description": "SoftSkills... Description...",
+					"descripcion": "SoftSkills... Description...44444444444",
 					"imagen": "https://drive.google.com/uc?export=download&id=1-lX9QgBw8iGXLEgBd_pmdsM_Fz3l6LJn"
 				}
 			],
 			"softskills": [
 				{
 					"nombre": "HTML",
-					"urlImage": "https://drive.google.com/uc?export=download&id=1VvV5Ii5CwNs0E-GMHy0jjTcWiFFUODpM",
+					"imagen": "https://drive.google.com/uc?export=download&id=1VvV5Ii5CwNs0E-GMHy0jjTcWiFFUODpM",
 					"nivel": "75"
 				},
 				{
 					"nombre": "CSS",
-					"urlImage": "https://drive.google.com/uc?export=download&id=1iL_jNpg0VIyZXVNsutkOtOb9RTSG1TlG",
+					"imagen": "https://drive.google.com/uc?export=download&id=1iL_jNpg0VIyZXVNsutkOtOb9RTSG1TlG",
 					"nivel": "65"
 				},
 				{
 					"nombre": "JavaScript",
-					"urlImage": "https://drive.google.com/uc?export=download&id=1nZ7LEX97bvieW2jjMazLv2dm5FljH57D",
+					"imagen": "https://drive.google.com/uc?export=download&id=1nZ7LEX97bvieW2jjMazLv2dm5FljH57D",
 					"nivel": "70"
 				},
 				{
 					"nombre": "Angular",
-					"urlImage": "https://drive.google.com/uc?export=download&id=16aWcp67NV6hMOpPaAUriHvcS6AwHziZc",
+					"imagen": "https://drive.google.com/uc?export=download&id=16aWcp67NV6hMOpPaAUriHvcS6AwHziZc",
 					"nivel": "95"
 				},
 				{
 					"nombre": "MySQL",
-					"urlImage": "https://drive.google.com/uc?export=download&id=1yIRdYG1ZJSzI-0yzsP16tZTHPLdYds4P",
+					"imagen": "https://drive.google.com/uc?export=download&id=1yIRdYG1ZJSzI-0yzsP16tZTHPLdYds4P",
 					"nivel": "60"
 				},
 				{
 					"nombre": "Node.JS",
-					"urlImage": "https://drive.google.com/uc?export=download&id=16K-Sj2SNUbP81JGFl5EE20fJ6esGtD3t",
+					"imagen": "https://drive.google.com/uc?export=download&id=16K-Sj2SNUbP81JGFl5EE20fJ6esGtD3t",
 					"nivel": "60"
 				}
 			],
