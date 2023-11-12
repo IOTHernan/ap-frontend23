@@ -13,10 +13,10 @@
     </div>
     </nav>
  -->
-<nav class="navbar d-flex container justify-content-center flex-direction-row flex-nowrap align-items-center box1">
-    <div class="d-flex container-fluid align-items-center flex-direction-row  justify-content-center flex-end flex-nowrap"><!-- style="width: 95%; padding: 0;" -->
+<nav class="navbar">
+    <div class="d-flex container-fluid justify-content-between">
         <div class="d-flex container-fluid align-items-center justify-content-center">
-            <div class="justify-content-start aling-content-center border">
+            <div class="justify-content-center aling-content-center border">
                 <a href="https://argentinaprograma.inti.gov.ar" target="_blank"
                     class="navbar-brand btn me-2" role="button" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" title="Go to Argentina Programa...">
@@ -25,15 +25,8 @@
                 </a><!-- "https://drive.google.com/uc?download&id=1YpESKuvXAUsP1TcJ-laFQlsmOKAf8VkP" -->
             </div>
         </div>
-        <!-- <div class="d-flex container-fluid align-items-center justify-content-center"> -->
-        <div class="varText cheAdjust shadow">
-            <div>
-                <p class="text">Proyecto Integrador</p>
-            </div>
-        </div>
-        <!-- </div> -->
-        <div>
-            <div class="d-flex container-fluid flex-direction-column cheAdjust">
+        <div class="varText cheAdjust shadow"><p class="text">Proyecto Integrador</p></div>
+        <div class="d-flex flex-row no-wrap justify-content-between border">
                 <div class="border">
                     <a href="https://github.com/HCanestraro"  target="_blank"
                     class="navbar-brand btn btn-outline-success me-2" role="button" data-bs-toggle="tooltip"
@@ -44,7 +37,7 @@
                 </div>
                 <div class="border">
                     <a href="https://instagram.com/@canestraro-che"  target="_blank"
-                    class="navbar-brand btn btn-outline-success me-2" role="button" data-bs-toggle="tooltip"
+                    class="navbar-brand" role="button" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" title="Go to Instagram...">
                         <img class="logos" src="https://drive.google.com/uc?export=download&id=13jp0SW_F2WCL5qAiRhDlZWXHoUMlN2gR
                     " alt="Picture...">
@@ -82,7 +75,6 @@
                     " alt="Picture..."></span>
                     </a>
                 </div>
-            </div>
         </div>
         <div class="d-flex container-fluid align-items-center justify-content-center">
             <div *ngIf="portfolioActive===true">
