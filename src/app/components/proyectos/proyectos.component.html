@@ -1,15 +1,11 @@
 <div id="proyectosFirstCard" class="p-2">
 	<h1 class="align-items-center text-center shadow">Proyectos</h1>
-	<div class="d-flex justify-content-center box1">
-		<button class="btn btn-green border shadow text-center fw-bold">
+		<button class="btn-agregar">
 			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
 					class="logos mt-1 bg-blue rounded-circle">AGREGAR PROYECTO</span>
 		</button>
-	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-<!-- 			<div class="d-flex flex-container container-fluid">
- -->
  				<div class="row box1">
 					<div class="d-flex justify-content-end border">
 						<div class="p-1">
@@ -24,7 +20,7 @@
 					</div>
 
 					<div class="column" style="width: 25%;">
-						<img [src]="miP.imagen" alt="" class="imgProyecto border">
+						<img [src]="miP.imagen" alt="" id="imgProyecto">
 					</div>
 					<div class="column" style="width: 75%;">
 						<p><b>Titulo:</b> {{miP.titulo}}</p>

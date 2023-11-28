@@ -1,24 +1,90 @@
-* {
+/* * {
 	box-sizing: border-box;
 	--bg-color-card:gray;
+} */
+
+body, html {
+	height: 100%;
+	margin: 0;
 }
 
-div #footerFirstCard #educacionFirstCard, #experienciaFirstCard, #skillFirstCard, #softSkillsFirstCard {
+.navbar {
+	border: 2px solid red;
+	background-color: #000;
+	width: 98.5vw;
+}
+.btn-agregar {
+	min-height: calc(100% - 56px); /* Ajustar la altura del div principal para dejar espacio para el navbar y asegurar un mínimo de altura */
+	border-radius: 32px;
+    background-color: greenyellow;
+	margin-bottom: 5px;
+}
+#miDiv {
+	min-height: calc(100% - 56px); /* Ajustar la altura del div principal para dejar espacio para el navbar y asegurar un mínimo de altura */
+	width: 100%;
+	background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tus preferencias */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #ccc; /* Añadir un borde al div principal */
+	flex-direction: column;
+}
+div .row {
+	margin-top: 1vw;
+	width: 90vw;
+}
+#footer {
+	background-color: #000;
+	border-radius: 32px 32px;
+	color: yellowgreen;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#educacionFirstCard,#proyectosFirstCard, #experienciaFirstCard, #skillsFirstCard, #softSkillsFirstCard {
 	width: 98vw;
 	margin-top: 10px;
 	padding: 0;
+	min-height: calc(100% - 56px); /* Ajustar la altura del div principal para dejar espacio para el navbar y asegurar un mínimo de altura */
+	/* width: 100%; */
+	background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tus preferencias */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #ccc; /* Añadir un borde al div principal */
+	flex-direction: column;
 }
 
 .logos {
-	width: 1.5rem;
+	width: 1.5vw;
 	height: auto;
 }
 
-.imgSoftSkill .imgSkill .imgProyecto .imgExperiencia .imgEducacion {
-	width: 15vw;
-	height: 15vw;
+#imgSoftSkills  {
+	border: 2px solid red;
+	width: 18vw;
+	height: 18vw;
 }
-
+#imgSkill {
+	border: 2px solid red;
+	width: 18vw;
+	height: 18vw;
+}
+#imgProyecto {
+	border: 2px solid red;
+	width: 18vw;
+	height: 18vw;
+}
+#imgExperiencia {
+	border: 2px solid red;
+	width: 18vw;
+	height: auto;
+}
+#imgEducacion {
+	border: 2px solid red;
+	width: 18vw;
+	height: 18vw;
+}
 .box1 {
 	border: 2px solid #000;
 }
@@ -188,23 +254,6 @@ input#exampleInputName1 {
 	align-items: center;
 }
 
-
-.footer {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	font-size: 18px;
-	background-color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	text-shadow: chocolate;
-	color: chartreuse;
-	width: 98.5vw; 
-	/* height: 100px; */
-	justify-content: center;
-	align-items: center;
-}
-
-
 .event__card {
 	width: 43.75rem;
 	height: 17em;
@@ -297,44 +346,28 @@ input#exampleInputName1 {
 }
 
 @media only screen and (max-width: 319px) {
-	.imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
-	{
-		width: 150px;
-		height: 50px;
-	}
-	p {
-		font-size: xx-small;
-	}
-
-	.footer {
-		padding: 5px;
-		border: 3px solid red;
-		margin-top: 35px;
-		display: flex;
-		position: initial;
-		font-size: xx-small;
-		font-family: Arial;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 89.5vw;
+	.logos {
+		width: 1.5vw;
 		height: auto;
+		justify-content: space-between;
+		margin-left: 5px;
 	}
-
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-	.imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
+	.logos {
+		width: 2vw;
+		height: auto;
+		justify-content: space-between;
+		margin-left: 5px;
+	}
+	/* 	.imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
 	{
 		width: 150px;
 		height: 100px;
 		size-adjust: 100%;
 		max-width:max-content;
 	}
-p {
-	font-size: 2vw;
-}
-
+ */
 	.fsearch {
 		flex-direction: row;
 		width: 12rem;
@@ -368,39 +401,15 @@ p {
 		width: 100%;
 	}
 
-	footer {
-		display: flex;
-		position: initial;
-		font-size: 18px;
-		background-color: black;
-		font-family: Arial, Helvetica, sans-serif;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 98.5vw;
-		height: 100px;
-	}
-
-	.logos {
-		width: 0.5vw;
-		height: 0.5vw;
-		justify-content: space-between;
-		margin-left: 5px;
-	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-	img .imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
-	{
-		width: 150px;
-		height: 200px;
-		max-width: max-content;
+	.logos {
+		width: 2vw;
+		height: auto;
+		justify-content: space-between;
+		margin-left: 5px;
 	}
-	p {
-		font-size: 2vw;
-	}
-
 	.logo1 {
 		position: relative;
 		top: -1px;
@@ -426,40 +435,15 @@ p {
 		width: 100%;
 	}
 
+}
 
-	footer {
-		display: flex;
-		position: initial;
-		font-size: 1.3vw;
-		font-family: Arial;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 98.5vw;
-		height: 100px;
-	}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 	.logos {
-		width: 2vw;
+		width: 2.5vw;
 		height: auto;
 		justify-content: space-between;
 		margin-left: 5px;
 	}
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-	img .imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
-	{
-		width: 150px;
-		height: 150px;
-	}
-	p {
-		font-size: 2vw;
-	}
-	body {
-		font-size: larger;
-	}
-
 	.logo1 {
 		position: relative;
 		top: -1px;
@@ -484,36 +468,14 @@ p {
 		table-layout: auto;
 		width: 100%;
 	}
-
-	footer {
-		display: flex;
-		position:initial;
-		font-size: 45px;
-		font-family: Arial;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 98.5vw;
-		height: 100px;
-	}
-
-	.logos {
-		width: 2.5vw;
-		height: auto;
-		justify-content: space-between;
-		margin-left: 5px;
-	}
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
-	.imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
-	{
-		width: 150px;
+	.logos {
+		width: 3.5vw;
 		height: auto;
-	}
-	p {
-		font-size: 2vw;
+		justify-content: space-between;
+		margin-left: 5px;
 	}
 	.logo1 {
 		position: relative;
@@ -534,31 +496,15 @@ p {
 		margin-left: 225px;
 	}
 
-	footer {
-		/* display: flex; */
-		position: initial;
-		font-size: 55px;
-		font-family: Arial;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 98.5vw;
-		height: 200px;
-	}
-
-	.logos {
-		width: 3.5vw;
-		height: auto;
-		justify-content: space-between;
-		margin-left: 5px;
-	}
 }
 
 @media only screen and (min-width: 2560px) {
-p{
-	font-size: 2vw;
-}
+	.logos {
+		width: 3.5vw;
+		height: auto;
+		justify-content: space-between;
+		margin-left: 5px;
+	}
 	.logo1 {
 		position: relative;
 		top: -1px;
@@ -578,24 +524,4 @@ p{
 		margin-left: 225px;
 	}
 
-	footer {
-		/* display: flex; */
-		position: absolute;
-		font-size: 25px;
-		font-family: Arial;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		color: chartreuse;
-		width: 98.5vw;
-		height: 200px;
-	}
-
-
-	.logos {
-		width: 3.5vw;
-		height: auto;
-		justify-content: space-between;
-		margin-left: 5px;
-	}
 }

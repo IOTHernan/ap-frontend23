@@ -1,22 +1,12 @@
-/* #flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	width: 98.5vw;
-} */
-
+/* 
 .varText {
 	display: contents;
 	width: fit-content;
 }
 
 .logoInti {
-	width: 5rem;
-	height: 5rem;
+	width: 2.5vw;
+	height: auto;
 }
 
 
@@ -30,11 +20,6 @@
 		align-items: center;
 	}
 
-	.logoInti {
-		width: 3rem;
-		height: 3rem;
-	}
-
 	.varText {
 		font-size: small;
 	}
@@ -46,11 +31,6 @@
 }
 
 @media (max-width: 768px) {
-	.logoInti {
-		width: 3rem;
-		height: auto;
-	}
-
 	.varText {
 		font-size: medium;
 	}
@@ -59,4 +39,4 @@
 		display: contents;
 		width: 68px;
 	}
-}
+} */

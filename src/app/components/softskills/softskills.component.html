@@ -1,11 +1,9 @@
-<div id="softSkillsFirstCard" class="p-2">
+<div id="softSkillsFirstCard">
 	<h1 class="align-items-center text-center shadow">Hard & SoftSkills</h1>
-	<div class="d-flex justify-content-center box1">
-		<button class="btn btn-green border shadow text-center fw-bold">
-			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
-					class="logos mt-1 bg-blue rounded-circle">AGREGAR SOFTSKILLS</span>
-		</button>
-	</div>
+	<button class="btn-agregar">
+		<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
+				class="logos mt-1 bg-blue rounded-circle">AGREGAR SOFTSKILLS</span>
+	</button>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
 			<div class="row box1">
@@ -22,11 +20,11 @@
 				</div>
 
 				<div class="column" style="width: 25%;">
-					<img [src]="miP.imagen" alt="" class="imgSoftSkills border">
+					<img [src]="miP.imagen" alt="" id="imgSoftSkills">
 				</div>
 				<div class="column" style="width: 75%;">
-					<p><b>Nombre:</b> {{miP.nombre}}</p>
-					<p><b>Nivel:</b>{{miP.nivel}}</p>
+					<p> <b> Nombre:</b> {{miP.nombre}}</p>
+					<p> <b> Nivel:</b>{{miP.nivel}}</p>
 				</div>
 			</div>
 		</li>

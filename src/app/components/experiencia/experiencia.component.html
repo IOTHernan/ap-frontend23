@@ -1,15 +1,11 @@
 <div id="experienciaFirstCard">
 	<h1 class="align-items-center text-center shadow">Experiencia</h1>
-	<div class="d-flex justify-content-center box1">
-		<button class="btn btn-green border shadow text-center fw-bold">
+		<button class="btn-agregar">
 			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar experiencia..."
 					class="logos mt-1 bg-blue rounded-circle">AGREGAR EXPERIENCIA</span>
 		</button>
-	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio ">
-			<!-- <div class="d-flex flex-container container-fluid"> -->
-
 			<div class="row box1">
 				<div class="d-flex justify-content-end border">
 					<div class="p-1">
@@ -23,7 +19,7 @@
 					</div>
 				</div>
 				<div class="column" style="width: 25%;">
-					<img [src]="miP.imagen" alt="" class="imgExperiencia border m-2">
+					<img [src]="miP.imagen" alt="" id="imgExperiencia">
 				</div>
 				<div class="column" style="width: 75%;">
 					<p><b>Ubicacion:</b> {{miP.ubicacion}}</p>

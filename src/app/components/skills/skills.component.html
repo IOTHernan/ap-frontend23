@@ -1,11 +1,9 @@
 <div id="skillsFirstCard">
 	<h1 class="align-items-center text-center shadow">Skills</h1>
-	<div class="d-flex justify-content-center box1">
-		<button class="btn btn-green border shadow text-center fw-bold">
+		<button class="btn-agregar">
 			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
 					class="logos mt-1 bg-blue rounded-circle">AGREGAR SKILLS</span>
 		</button>
-	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
 			<div class="row box1">
@@ -22,7 +20,7 @@
 				</div>
 
 				<div class="column" style="width: 25%;">
-					<img [src]="miP.imagen" alt="" class="imgSkill border">
+					<img [src]="miP.imagen" alt="" id="imgSkill">
 				</div>
 				<div class="column" style="width: 75%;">
 					<p><b>Descripcion:</b> {{miP.descripcion}}</p>
