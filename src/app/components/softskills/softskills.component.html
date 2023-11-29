@@ -6,7 +6,7 @@
 	</button>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div class="row box1">
+			<div id="cheCard" class="row box1">
 				<div class="d-flex justify-content-end border">
 					<div class="p-1">
 						<button class="btn p-0 m-1"><span><img class="logos"
@@ -22,9 +22,22 @@
 				<div class="column" style="width: 25%;">
 					<img [src]="miP.imagen" alt="" id="imgSoftSkills">
 				</div>
-				<div class="column" style="width: 75%;">
-					<p> <b> Nombre:</b> {{miP.nombre}}</p>
-					<p> <b> Nivel:</b>{{miP.nivel}}</p>
+				<div class="column justify-content-center align-items-center align-self-center text-center" style="width: 45%;">
+					<h4> <b> Nombre:</b><span style="color:magenta;"> {{miP.nombre}}</span></h4>
+					<h4> <b> Nivel:</b>{{miP.nivel}}</h4>
+				</div>
+				<div class="column" style="width: 30%;">
+					<circle-progress 
+						[percent]="miP.nivel"
+						
+						[outerStrokeWidth]="6"
+						[innerStrokeWidth]="6"
+						[outerStrokeColor]="'#78C000'"
+						[innerStrokeColor]="'#C7E596'"
+						[animation]="true"
+						[animationDuration]="300"
+						></circle-progress><!-- [radius]="25" -->
+
 				</div>
 			</div>
 		</li>

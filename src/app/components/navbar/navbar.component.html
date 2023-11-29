@@ -1,85 +1,83 @@
-<!-- <div class="d-flex container-fluid" id="miDiv">
- --><nav class="navbar navbar-expand-lg bg-body-tertiary">
-     <!-- Logo e información a la izquierda del navbar -->
-     <div class="container-fluid">
-        <a href="https://argentinaprograma.inti.gov.ar" target="_blank" class="navbar-brand" role="button"
-            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Argentina Programa...">
-            <span><img class="logoInti d-inline-block align-top" src="https://drive.google.com/uc?download&id=1YpESKuvXAUsP1TcJ-laFQlsmOKAf8VkP" alt="INTI..." width="100" height="50"></span>
-        <span>Proyecto Integrador</span></a><!--  "../../../assets/media/APLogo.png"-->
-        
-<!-- Botón de hamburguesa para pantallas pequeñas -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-        <!-- Contenido del navbar -->
-        <div class="d-flex container-fluid nabar-collapse ms-auto" id="navbarNav">
-            <!-- Menú a la derecha -->
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="https://github.com/HCanestraro" target="_blank"
-                    class="navbar-brand" role="button" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" title="Go to GitHub...">
-                        <!-- <img class="logos" src="https://drive.google.com/uc?export=download&id=1YFszfvj_-afq1bH9tsXXF8zrDOQvHxo-" alt="Picture..."> -->
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://instagram.com/@canestraro-che" target="_blank" class="navbar-brand" role="button"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Instagram...">
-                    <!-- <img class="logos" src="https://drive.google.com/uc?export=download&id=13jp0SW_F2WCL5qAiRhDlZWXHoUMlN2gR" alt="Picture..."> -->
-                    <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.twitter.com/@canestraro-che" target="_blank"
-                    class="nav-item" role="button" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="Go to X (ex-Twitter)...">
-                        <!-- <img class="logos" src="https://drive.google.com/uc?export=download&id=1BXwyUpUm_AnXnh4-xIIUv8gdvYOU0quV" alt="Picture..."> -->
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://ar.linkedin.com/in/hernan-canestraro-44448435" target="_blank" class="nav-link"
-                    role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to GitHub...">
-                    <!-- <img class="logos" src="https://drive.google.com/uc?export=download&id=1tDmdALAhhy9kS6edRWUqDgt4QJUuXaMd" alt="Picture..."> -->
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://sites.google.com/view/HCanestraro" target="_blank" class="nav-link" role="button"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Google Sites...">
-                    <img class="logos" src="https://drive.google.com/uc?export=download&id=1NuIu3CYzCAZ_F34TH6zXTdHo1-BiP-GP" alt="Picture...">
-                    <!-- <i class="fab fa-google-sites"></i> -->
-                </a>
-            </li>
-                <li class="nav-item">
-                    <a href="https://www.youtube.com/@HCanestraro" target="_blank" class="nav-link" role="button"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Youtube...">
-                        <!-- <img class="logos" src="https://drive.google.com/uc?export=download&id=1Fi4F7MzyrKIAIkK3bdNSeZ3oNjb5ly11" alt="Picture..."></span> -->
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <div *ngIf="portfolioActive===true">
-                        <!-- <div *ngIf="usuarioLogueado"> -->
-                            <!-- <p>{{userAlias}}</p>
-                                <img *ngIf="imagenPerfil | async" [src]="imagenPerfil | async" alt="Imagen de perfil" class="logos"> -->
-                                <button (click)="logout()" class=" btn btn-dark rounded  btn-md w-100 text-white fw-bold shadow-lg"
-                                routerLink="/login">TERMINAR
-                                EDICIÓN</button>
-                                <!-- </div> -->
-                            </div>
-                            <div *ngIf="portfolioActive===false">
-                                <button class="btn btn-info border border-info text-white fw-bold fw-bold shadow ms-3"
-                                routerLink="/register">Registrarse</button>
-                                <button class="btn btn-info text-white fw-bold shadow-lg" routerLink="/login">Login</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-        
-    </div>
-</nav>
-<!-- </div> -->
+<div class="container-fluid p-1 shadow">
+	<div class="row d-flex flex-wrap justify-content-between col-12 bg-white">
+		<div class="d-flex flex-wrap justify-content-around col-md-6 col-sm-12">
+			<div class="d-flex col-md-4 col-sm-4 justify-content-center mt-1">
+				<a href="https://argentinaprograma.inti.gov.ar" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Argentina Programa...">
+					<img class="logoInti bg-danger m-1 rounded shadow"
+							src="https://drive.google.com/uc?download&id=1YpESKuvXAUsP1TcJ-laFQlsmOKAf8VkP"
+							alt="INTI...">
+				</a>
+			</div>
+			<div class="d-flex col-md-8 col-sm-8 justify-content-center text-center">
+				<p class="fw-bold ms-3 mt-3">Proyecto Integrador</p>
+			</div>
+		</div>
+		<div class="d-flex flex-wrap justify-content-around mt-2 col-md-6 col-sm-12">
+			<div class="d-flex col-md-6 col-sm-6 justify-content-center">
+				<div>
+					<a href="https://github.com/HCanestraro" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to GitHub...">
+						<img class="logos m-1 shadow rounded p-1"
+							src="https://drive.google.com/uc?export=download&id=1YFszfvj_-afq1bH9tsXXF8zrDOQvHxo-"
+							alt="Picture...">
+						<!-- <i class="fab fa-github"></i> -->
+					</a>
+				</div>
+				<div>
+					<a href="https://instagram.com/@canestraro-che" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Instagram...">
+						<img class="logos"
+							src="https://drive.google.com/uc?export=download&id=13jp0SW_F2WCL5qAiRhDlZWXHoUMlN2gR"
+							alt="Picture...">
+						<!-- <i class="fab fa-instagram"></i> -->
+					</a>
+				</div>
+				<div>
+					<a href="https://www.twitter.com/@canestraro-che" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to X (ex-Twitter)...">
+						<img class="logos"
+							src="https://drive.google.com/uc?export=download&id=1BXwyUpUm_AnXnh4-xIIUv8gdvYOU0quV"
+							alt="Picture...">
+						<!-- <i class="fab fa-twitter"></i> -->
+					</a>
+				</div>
+				<div>
+					<a href="https://ar.linkedin.com/in/hernan-canestraro-44448435" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to GitHub...">
+						<img class="logos" src="https://drive.google.com/uc?export=download&id=1tDmdALAhhy9kS6edRWUqDgt4QJUuXaMd" alt="Picture...">
+						<!-- <i class="fab fa-linkedin"></i> -->
+					</a>
+				</div>
+				<div>
+					<a href="https://sites.google.com/view/HCanestraro" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Google Sites...">
+						<img class="logos"
+							src="https://drive.google.com/uc?export=download&id=1NuIu3CYzCAZ_F34TH6zXTdHo1-BiP-GP"
+							alt="Picture...">
+						<!-- <i class="fab fa-google-sites"></i> -->
+					</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/@HCanestraro" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Youtube...">
+						<img class="logos" src="https://drive.google.com/uc?export=download&id=1Fi4F7MzyrKIAIkK3bdNSeZ3oNjb5ly11" alt="Picture...">
+						<!-- <i class="fab fa-youtube"></i> -->
+					</a>
+				</div>
+			</div>
+			<div class="d-flex col-md-6 col-sm-6 justify-content-center mb-2">
+				<div *ngIf="portfolioActive === false">
+					<div class="d-flex justify-content-around col-md-12 col-sm-12">
+						<div class="col-12 text-center">
+							<button class="btn btn-info btn-md w-100 text-white fw-bold shadow-lg" 
+								routerLink="/login">MODO EDICIÓN</button>
+						</div>
+					</div>
+				</div>
+				<div *ngIf="portfolioActive === true">
+					<div class="d-flex justify-content-around col-md-12 w-100 col-sm-12 mt-1 mb-2">
+						<div class="col-6 w-100 text-center">
+							<button class="btn btn-dark rounded btn-md w-100 text-white fw-bold shadow-lg"
+							(click)="logout($event)">TERMINAR EDICIÓN</button>
+								<!-- <button class="btn btn-info text-white fw-bold shadow-lg" routerLink="/login">Login</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

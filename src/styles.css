@@ -2,12 +2,52 @@
 	box-sizing: border-box;
 	--bg-color-card:gray;
 } */
+/* Estilos básicos para el tooltip */
+.circle-progress {
+    /* Estilo específico para dispositivos móviles */
+    /* Reduzco el radio para adaptarlo a pantallas pequeñas */
+    border-radius: 10vw; /* Ejemplo: ajusta según tus necesidades */
+  }
 
+.logoInti {
+	width: 150px;
+	height: 50px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  /* Estilo del contenido del tooltip */
+  .tooltip::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #333;
+	color: #ae4949;
+	padding: 8px;
+	border-radius: 4px;
+	font-size: 14px;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  /* Mostrar el tooltip al pasar el ratón sobre el elemento */
+  .tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+  }
+  
 body, html {
 	height: 100%;
 	margin: 0;
 }
-
+.cheCard {
+	margin-bottom: 3px;
+}
 .navbar {
 	border: 2px solid red;
 	background-color: #000;
@@ -53,6 +93,7 @@ div .row {
 	justify-content: center;
 	border: 2px solid #ccc; /* Añadir un borde al div principal */
 	flex-direction: column;
+	margin-bottom: 5px;
 }
 
 .logos {
@@ -352,6 +393,11 @@ input#exampleInputName1 {
 		justify-content: space-between;
 		margin-left: 5px;
 	}
+	.circle-progress {
+		/* Estilo específico para dispositivos móviles */
+		/* Reduzco el radio para adaptarlo a pantallas pequeñas */
+		border-radius: 1.5vw; /* Ejemplo: ajusta según tus necesidades */
+	  }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	.logos {
@@ -360,14 +406,12 @@ input#exampleInputName1 {
 		justify-content: space-between;
 		margin-left: 5px;
 	}
-	/* 	.imgSoftSkills .imgSkill .imgProyecto .imgExperiencia .imgEducacion 
-	{
-		width: 150px;
-		height: 100px;
-		size-adjust: 100%;
-		max-width:max-content;
-	}
- */
+	.circle-progress {
+		/* Estilo específico para dispositivos móviles */
+		/* Reduzco el radio para adaptarlo a pantallas pequeñas */
+		border-radius: 4vw; /* Ejemplo: ajusta según tus necesidades */
+	  }
+
 	.fsearch {
 		flex-direction: row;
 		width: 12rem;
@@ -410,6 +454,11 @@ input#exampleInputName1 {
 		justify-content: space-between;
 		margin-left: 5px;
 	}
+	.circle-progress {
+		/* Estilo específico para dispositivos móviles */
+		/* Reduzco el radio para adaptarlo a pantallas pequeñas */
+		border-radius: 9vw; /* Ejemplo: ajusta según tus necesidades */
+	  }
 	.logo1 {
 		position: relative;
 		top: -1px;
@@ -444,6 +493,11 @@ input#exampleInputName1 {
 		justify-content: space-between;
 		margin-left: 5px;
 	}
+	.circle-progress {
+		/* Estilo específico para dispositivos móviles */
+		/* Reduzco el radio para adaptarlo a pantallas pequeñas */
+		border-radius: 12vw; /* Ejemplo: ajusta según tus necesidades */
+	  }
 	.logo1 {
 		position: relative;
 		top: -1px;
@@ -477,6 +531,11 @@ input#exampleInputName1 {
 		justify-content: space-between;
 		margin-left: 5px;
 	}
+	.circle-progress {
+		/* Estilo específico para dispositivos móviles */
+		/* Reduzco el radio para adaptarlo a pantallas pequeñas */
+		border-radius: 18vw; /* Ejemplo: ajusta según tus necesidades */
+	  }
 	.logo1 {
 		position: relative;
 		top: -1px;

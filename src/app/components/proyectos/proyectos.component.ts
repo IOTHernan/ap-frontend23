@@ -1,29 +1,49 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { IProyecto } from 'src/app/interfaces/iproyecto';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
-  selector: 'app-proyectos',
-  templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.css']
+	selector: 'app-proyectos',
+	templateUrl: './proyectos.component.html',
+	styleUrls: ['./proyectos.component.css']
 })
-export class ProyectosComponent implements OnInit{
-  miPortfolio: any;
-  constructor(private portfolioService: PortfolioService) {
-    
-  }
-  ngOnInit(): void {
-    this.portfolioService.obtenerDatos().subscribe(data => {
-      console.log(data);
-      
-      this.miPortfolio=data.proyectos;
-      console.log(this.miPortfolio);
-      
-    });
-    
-  }
+export class ProyectosComponent implements OnInit {
+	miPortfolio: any;
+	modoEdicion: boolean= false;
+	modoNuevoRegistro: boolean= false;
+	deleteItem: boolean = false;
+	form: FormGroup;
 
-  selectItem(item:any) {
-    console.log(item);
-    
-  } 
+	constructor(private portfolioService: PortfolioService) {
+		this.form = new FormGroup({
+			titulo: new FormControl(['', [Validators.required, Validators.maxLength(2)]]),
+			descripcion: new FormControl(['', [Validators.required, Validators.maxLength(2)]]),
+			imagen: new FormControl(['', [Validators.required, Validators.maxLength(2)]])
+		})
+	}
+
+	ngOnInit(): void {
+		console.log("PROYECTOS");
+		this.portfolioService.obtenerDatosProyectos().subscribe(data => {
+			console.log("Datos Personales: " + JSON.stringify(data));
+			this.miPortfolio = data;
+			console.log(this.miPortfolio);
+		});
+
+	}
+
+	selectItem(item: any) {
+		console.log("------------");
+		console.log(item);
+		console.log("------------");
+	}
+	añadirProyecto(): void {
+		this.modoNuevoRegistro = true;
+		this.modoEdicion = true;
+	}
+	editarProyecto(item:any) {}
+	deleteProyecto(item:any) {
+		this.deleteItem=true;
+	}
 }

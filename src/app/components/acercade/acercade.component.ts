@@ -2,29 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
-	selector: 'app-softskills',
-	templateUrl: './softskills.component.html',
-	styleUrls: ['./softskills.component.css']
+	selector: 'app-acercade',
+	templateUrl: './acercade.component.html',
+	styleUrls: ['./acercade.component.css']
 })
-export class SoftskillsComponent implements OnInit {
+export class AcercadeComponent implements OnInit {
 	miPortfolio: any;
-	nivelS: string | undefined;
 	constructor(private portfolioService: PortfolioService) {
-
+    
 	}
+
 	ngOnInit(): void {
+		console.log("Acerdade");
 		this.portfolioService.obtenerDatos().subscribe(data => {
 			console.log(data);
-
-			this.miPortfolio = data.softskills;
+			
+			this.miPortfolio=data.aboutme;
 			console.log(this.miPortfolio);
-		});
-	}
-
-	selectItem(item: any) {
-		console.log("Item SoftSkills");
-		
-		console.log(item);
+			
+		  });
+		  
+	
 
 	}
 }
