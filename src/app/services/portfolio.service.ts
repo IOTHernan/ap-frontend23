@@ -12,30 +12,21 @@ import { Iacercade } from '../interfaces/iacercade';
 	providedIn: 'root'
 })
 export class PortfolioService {
-	url = "src/assets/data/";
+	url="https://argentina-programa-portafolio.heroku.com/api/v1/";
 
 	// Headers para POST, PUT Y DELETE.
 	headers = new HttpHeaders({
 		'Content-Type': 'application/json',
 		'Access-Control-Allow-Origin': '*'
 	});
+
 	constructor(private http: HttpClient) { }
+	
 	obtenerDatos(): Observable<any> {
 		// console.log('El servicio portfolio está corriendo');
-		return this.http.get<any>(this.url + "data.json");
+		return this.http.get<any>("./src/assets/data/data.json");
 	}
 
-
-
-	/*   url = "https://argentina-programa-portafolio.herokuapp.com/api/v1/"; */
-
-	// Headers para POST, PUT Y DELETE.
-	/*   headers = new HttpHeaders({
-		'Content-Type': 'application/json',
-		'Access-Control-Allow-Origin': '*' });
-	 */
-
-	
 	// *********************************************************************
 	// **************   |   METHOD'S GET ALL    | **************************
 	// *********************************************************************
@@ -91,7 +82,7 @@ export class PortfolioService {
 	// **************   |   METHOD'S POST    | ******************************
 	// *********************************************************************
 
-	postAcercaDe(AcercaDe: any): Observable<any> {
+	/* postAcercaDe(AcercaDe: any): Observable<any> {
 		let AcercaDeJSON = JSON.stringify(AcercaDe);
 		return this.http.post<any>(this.url + 'acerca_de', AcercaDeJSON, { headers: this.headers });
 	}
@@ -111,12 +102,12 @@ export class PortfolioService {
 	postSkill(Skill: ISkill): Observable<ISkill> {
 		return this.http.post<ISkill>(this.url + 'skills', Skill, { headers: this.headers });
 	}
-
+ */
 	// *********************************************************************
 	// **************   |   METHOD'S PUT    | ******************************
 	// *********************************************************************
 
-	putAcercaDe(AcercaDe: any, id: Number): Observable<any> {
+/* 	putAcercaDe(AcercaDe: any, id: Number): Observable<any> {
 		return this.http.put<any>(this.url + 'acerca_de/' + id, AcercaDe, { headers: this.headers });
 	}
 
@@ -136,12 +127,12 @@ export class PortfolioService {
 		return this.http.put<ISkill>(this.url + 'skills/' + id, Skill, { headers: this.headers });
 	}
 
-
+ */
 	// *********************************************************************
 	// **************   |   METHOD'S DELETE    | ***************************
 	// *********************************************************************
 
-	deleteAcercaDe(id: Number): Observable<any> {
+/* 	deleteAcercaDe(id: Number): Observable<any> {
 		return this.http.delete<any>(this.url + 'acerca_de/' + id, { headers: this.headers });
 	}
 
@@ -160,7 +151,7 @@ export class PortfolioService {
 	deleteSkill(id: Number): Observable<ISkill> {
 		return this.http.delete<ISkill>(this.url + 'skills/' + id, { headers: this.headers });
 	}
-
+ */
 
 }
 

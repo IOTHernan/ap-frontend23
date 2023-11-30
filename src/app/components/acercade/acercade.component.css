@@ -3,6 +3,7 @@ h1 {
 }
 
 div #acercade {
+	border-radius: 50%;
 	border: 1px solid greenyellow;
 	margin: 1px 1px;
 }

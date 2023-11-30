@@ -9,9 +9,8 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 export class SoftskillsComponent implements OnInit {
 	miPortfolio: any;
 	nivelS: string | undefined;
-	constructor(private portfolioService: PortfolioService) {
-
-	}
+	constructor(private portfolioService: PortfolioService) {}
+	
 	ngOnInit(): void {
 		this.portfolioService.obtenerDatos().subscribe(data => {
 			console.log(data);

@@ -2,14 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-
 @Injectable({
 	providedIn: 'root'
 })
 export class AutenticacionService {
-	urlLogin = "localhost://4200";
-	urlNuevo = "localhost://4200";
+
+	urlLogin = "https://argentina-programa-portafolio.herokuapp.com/auth/login";
+	urlNuevo = "https://argentina-programa-portafolio.herokuapp.com/auth/nuevo";
 	usuario: BehaviorSubject<any>;
+
+
 	constructor(private http: HttpClient) {
 		console.log("El servicio de autenticación está corriendo.");
 		this.usuario = new BehaviorSubject<any>(JSON.parse(sessionStorage.getItem('token') || '{}'));
@@ -43,6 +45,4 @@ export class AutenticacionService {
 		sessionStorage.removeItem('token');
 		console.log("Token removido, desde archivo autentication service", sessionStorage.getItem('token'));
 	}
-
-
 }
