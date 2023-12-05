@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { IProyecto } from 'src/app/interfaces/iproyecto';
+/* import { IProyectos } from 'src/app/interfaces/iproyectos'; */
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -10,6 +10,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ProyectosComponent implements OnInit {
 	miPortfolio: any;
+	miPortfolio2!:any;
 	modoEdicion: boolean= false;
 	modoNuevoRegistro: boolean= false;
 	deleteItem: boolean = false;
@@ -25,12 +26,14 @@ export class ProyectosComponent implements OnInit {
 
 	ngOnInit(): void {
 		console.log("PROYECTOS");
-		this.portfolioService.obtenerDatosProyectos().subscribe(data => {
+		/* this.portfolioService.obtenerDatosProyectos().subscribe(data => {
 			console.log("Datos Personales: " + JSON.stringify(data));
 			this.miPortfolio = data;
-			console.log(this.miPortfolio);
+			this.miPortfolio2 = JSON.stringify(data);
+			console.log(this.miPortfolio2); */
+			this.portfolioService.obtenerDatos().subscribe(data => {
+				this.miPortfolio=data.proyectos;
 		});
-
 	}
 
 	selectItem(item: any) {

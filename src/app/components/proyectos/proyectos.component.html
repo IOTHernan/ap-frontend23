@@ -1,40 +1,46 @@
-<section id="proyecto">
-<div id="proyectosFirstCard" class="p-2">
-	<h1 class="align-items-center text-center shadow">Proyectos</h1>
-		<button class="btn-agregar" onclick="addProyecto()">
-			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Proyecto..."
-					class="logos mt-1 bg-blue rounded-circle">AGREGAR PROYECTO</span>
-		</button>
+<div id="proyectosFirstCard">
+	<div class="cHeader">
+		<div class="cTitle column justify-content-start">
+			<h1>Proyectos</h1>
+		</div>
+		<div class="cAdd"><!-- class="column justify-content-end" -->
+			<button class="btn-agregar" onclick="addProyecto()">
+				<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Proyecto..."
+						class="logos mt-1 bg-blue rounded-circle">AGREGAR PROYECTO</span>
+			</button>
+		</div>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio ; let i = index" [attr.data-index]="i" onclick="selectItem(miP);">
- 				<div class="row box1">
-					<div class="d-flex justify-content-end border">
-						<div class="p-1">
-							<button class="btn p-0 m-1" onclick="editarProyecto()"><span><img class="logos"
-										src="../../../assets/media/logoPencil.png"></span>
-							</button>
-						</div>
-						<div class="p-1">
-							<button class="btn p-0 m-1" onclick="deleteProyecto()"><span><img class="logos"
-										src="../../../assets/media/logoDelete.png"></span></button>
-						</div>
+			<div class="cCard row box1">
+				<div class="d-flex justify-content-end border">
+					<div class="p-1">
+						<button class="btn p-0 m-1"  data-bs-toggle="tooltip" title="
+						Editar proyecto..." onclick="editarProyecto()"><span><img class="logos"
+									src="../../../assets/media/logoPencil.png"></span>
+						</button>
 					</div>
-
-					<div class="column" style="width: 25%;">
-						<img [src]="miP.imagen" alt="" id="imgProyecto">
-					</div>
-					<div class="column" style="width: 75%;">
-						<p><b>Titulo:</b> {{miP.titulo}}</p>
-						<p><b>Descripcion:</b>{{miP.descripcion}}</p>
+					<div class="p-1">
+						<button class="btn p-0 m-1"  data-bs-toggle="tooltip" title="
+						Eliminar proyecto..." onclick="deleteProyecto()"><span><img class="logos"
+									src="../../../assets/media/logoDelete.png"></span></button>
 					</div>
 				</div>
-<!-- 			</div> -->
+
+				<div class="column" style="width: 25%; margin-bottom: 10px;">
+					<img [src]="miP.imagen" alt="" id="imgProyecto">
+				</div>
+				<div class="column" style="width: 75%;">
+					<p><b>Titulo:</b> {{miP.titulo}}</p>
+					<p><b>Descripcion:</b>{{miP.descripcion}}</p>
+				</div>
+			</div>
 		</li>
 	</ul>
 </div>
-</section>
-<section id="addProyecto" *ngIf[modoNuevoRegistro]=True>
-	<div class="d-flex">
+
+<section id="addProyecto">
+	<div *ngIf[modoNuevoRegistro]=True class="d-flex">
 		<h1 class="centertext">Añadir Proyecto</h1>
 		<form action="">
 			<label for="titulo">Titulo: </label>
@@ -42,7 +48,8 @@
 			<label for="descripcion">Descripción: </label>
 			<input type="text" name="descripcion" id="descripcion">
 			<label for="imagen">URL de imagén: </label>
-			<input type="text" name="imagen" id="imagen" autocomplete="https://drive.google.com/file/d/1NUMpYi6Kv_0XFj5rsYJjlo2f_K3bSGIQ/view?usp=sharing">
+			<input type="text" name="imagen" id="imagen"
+				autocomplete="https://drive.google.com/file/d/1NUMpYi6Kv_0XFj5rsYJjlo2f_K3bSGIQ/view?usp=sharing">
 			<button type="submit">Submit</button>
 		</form>
 	</div>

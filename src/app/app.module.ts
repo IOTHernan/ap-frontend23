@@ -8,7 +8,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SoftskillsComponent } from './components/softskills/softskills.component';
@@ -16,8 +16,10 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { AuthInterceptor } from './services/interceptor.service';
+import { InterceptorService } from './services/interceptor.service';
 import { AcercadeComponent } from './components/acercade/acercade.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PortfolioService } from './services/portfolio.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,12 +39,12 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+	ReactiveFormsModule,
     HttpClientModule,
+	FormsModule,
     NgCircleProgressModule.forRoot({})
   ],
-  providers: [
-
-  ],
+  providers: [PortfolioService, { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

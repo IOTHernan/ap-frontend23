@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { ISkill } from '../interfaces/iskill';
 import { IEducacion } from './../interfaces/ieducacion';
 import { IExperiencia } from './../interfaces/iexperiencia';
-import { IProyecto } from './../interfaces/iproyecto';
+import { IProyectos } from '../interfaces/iproyectos';
 import { Iacercade } from '../interfaces/iacercade';
 
 @Injectable({
@@ -24,7 +24,7 @@ export class PortfolioService {
 	
 	obtenerDatos(): Observable<any> {
 		// console.log('El servicio portfolio está corriendo');
-		return this.http.get<any>("./src/assets/data/data.json");
+		return this.http.get<any>("./assets/data/data.json");
 	}
 
 	// *********************************************************************
@@ -44,8 +44,8 @@ export class PortfolioService {
 		return this.http.get<IExperiencia>(this.url + 'experiencias');
 	}
 
-	obtenerDatosProyectos(): Observable<IProyecto> {
-		return this.http.get<IProyecto>(this.url + 'proyectos');
+	obtenerDatosProyectos(): Observable<IProyectos> {
+		return this.http.get<IProyectos>(this.url + 'proyectos');
 	}
 
 	obtenerDatosSkills(): Observable<ISkill> {
@@ -68,8 +68,8 @@ export class PortfolioService {
 		return this.http.get<IExperiencia>(this.url + 'experiencias/' + id);
 	}
 
-	obtenerOneDatosProyecto(id: number): Observable<IProyecto> {
-		return this.http.get<IProyecto>(this.url + 'proyectos/' + id);
+	obtenerOneDatosProyecto(id: number): Observable<IProyectos> {
+		return this.http.get<IProyectos>(this.url + 'proyectos/' + id);
 	}
 
 	obtenerOneDatosSkill(id: number): Observable<ISkill> {
@@ -95,8 +95,8 @@ export class PortfolioService {
 		return this.http.post<IExperiencia>(this.url + 'experiencias', Experiencia, { headers: this.headers });
 	}
 
-	postProyecto(Proyecto: IProyecto): Observable<IProyecto> {
-		return this.http.post<IProyecto>(this.url + 'proyectos', Proyecto, { headers: this.headers });
+	postProyecto(Proyecto: IProyectos): Observable<IProyectos> {
+		return this.http.post<IProyectos>(this.url + 'proyectos', Proyecto, { headers: this.headers });
 	}
 
 	postSkill(Skill: ISkill): Observable<ISkill> {
@@ -119,8 +119,8 @@ export class PortfolioService {
 		return this.http.put<IEducacion>(this.url + 'educacion/' + id, Educacion, { headers: this.headers });
 	}
 
-	putProyecto(Proyecto: IProyecto, id: Number): Observable<IProyecto> {
-		return this.http.put<IProyecto>(this.url + 'proyectos/' + id, Proyecto, { headers: this.headers });
+	putProyecto(Proyecto: IProyectos, id: Number): Observable<IProyectos> {
+		return this.http.put<IProyectos>(this.url + 'proyectos/' + id, Proyecto, { headers: this.headers });
 	}
 
 	putSkill(Skill: ISkill, id: Number): Observable<ISkill> {
@@ -144,8 +144,8 @@ export class PortfolioService {
 		return this.http.delete<IExperiencia>(this.url + 'experiencias/' + id, { headers: this.headers });
 	}
 
-	deleteProyecto(id: Number): Observable<IProyecto> {
-		return this.http.delete<IProyecto>(this.url + 'proyectos/' + id, { headers: this.headers });
+	deleteProyecto(id: Number): Observable<IProyectos> {
+		return this.http.delete<IProyectos>(this.url + 'proyectos/' + id, { headers: this.headers });
 	}
 
 	deleteSkill(id: Number): Observable<ISkill> {

@@ -16,7 +16,7 @@ export class EducacionComponent implements OnInit {
 		this.portfolioService.obtenerDatos().subscribe(data => {
 			console.log(data);
 
-			this.miPortfolio = data;
+			this.miPortfolio = data.educacion;
 			console.log(this.miPortfolio);
 
 		});

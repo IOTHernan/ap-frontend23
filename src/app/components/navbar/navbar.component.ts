@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AutenticacionService } from 'src/app/services/autenticacion.service';
 import Swal from 'sweetalert2';
+/* import { NgZone } from '@angular/core'; */
+
+/* declare var gapi: any; */
 
 @Component({
 	selector: 'app-navbar',
@@ -10,16 +13,51 @@ import Swal from 'sweetalert2';
 })
 
 export class NavbarComponent implements OnInit {
-
+	
 	loginActive: Boolean = true;
 	registerActive: Boolean = false;
 	portfolioActive: Boolean = false;
 	pageNotFoundActive: Boolean = false;
 	rutaActiva: any;
-
-	constructor(private router: Router, private autenticacionService: AutenticacionService) { }
-
+	
+	constructor(/* private ngZone: NgZone, */private router: Router, private autenticacionService: AutenticacionService) { }
+	
 	ngOnInit(): void {
+		/* this.ngZone.runOutsideAngular(() => {
+			gapi.load('client:auth2', () => {
+			  gapi.client
+				.init({
+				  clientId: "309525837536-er5t0ivbftkvli42m9isitb700gp9950.apps.googleusercontent.com",
+				  apiKey: 'AIzaSyCpb7Sw8X_r7VSMi08EGYq03Zt3o62YDu4',
+				  discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
+				  scope: 'https://www.googleapis.com/auth/drive.readonly',
+				})
+				.then(
+				  () => {
+					// Realiza acciones después de la inicialización
+					console.log('API de Google Drive inicializada');
+				  },
+				  (error: any) => {
+					console.error('Error al inicializar la API de Google Drive', error);
+				  }
+				);
+			});
+		  });
+		  gapi.client.drive.files.list({
+			pageSize: 10,
+			fields: 'nextPageToken, files(id, name)',
+		  }).then((response: any) => {
+			const files = response.result.files;
+			if (files && files.length > 0) {
+			  console.log('Archivos en Google Drive:');
+			  files.forEach((file: any) => {
+				console.log(`${file.name} (${file.id})`);
+			  });
+			} else {
+			  console.log('No se encontraron archivos.');
+			}
+		  });
+		 */  
 		this.rutaActiva = this.router.url;
 		console.log(this.rutaActiva);
 

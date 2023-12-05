@@ -9,6 +9,21 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<!-- Agrega la siguiente línea en el encabezado de tu HTML -->
+<script src="https://apis.google.com/js/api.js"></script>
+
+<!-- Luego, en tu código JavaScript, espera a que la biblioteca esté cargada antes de usarla -->
+<script>
+  // Asegúrate de que este código se ejecute después de que la biblioteca gapi esté completamente cargada
+  gapi.load('client:auth2', () => {
+    // Ahora puedes utilizar gapi de manera segura
+  });
+  gapi.load('client:auth2:drive', () => {
+  // Ahora puedes utilizar gapi.client.drive
+});
+
+</script>
+
 </head>
 
 <body>

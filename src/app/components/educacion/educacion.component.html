@@ -1,38 +1,43 @@
-<div id="miDiv">
-	<h1 class="align-items-center text-center shadow">Educación</h1>
-		<button class="btn-agregar">
-			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
-					class="logos mt-1 bg-blue rounded-circle">AGREGAR EDUCACIÓN</span>
-		</button>
+<div id="educacionFirstCard">
+	<div class="cHeader">
+		<div class="cTitle column justify-content-start">
+			<h1>Educación</h1>
+		</div>
+		<div class="cAdd" ><!-- class="column justify-content-end" -->
+			<button class="btn-agregar">
+				<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
+						class="logos mt-1 bg-blue rounded-circle">AGREGAR EDUCACIÓN</span>
+			</button>
+		</div>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-				<div class="row box1">
-					<div class="d-flex justify-content-end border">
-						<div class="p-1">
-							<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="
-							Editar educación..."><span><img class="logos"
-										src="../../../assets/media/logoPencil.png"></span>
-							</button>
-						</div>
-						<div class="p-1">
-							<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="Eliminar educación..."><span><img class="logos"
-										src="../../../assets/media/logoDelete.png"></span></button>
-						</div>
+			<div class="cCard row box1">
+				<div class="d-flex justify-content-end border">
+					<div class="p-1">
+						<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="
+							Editar educación..."><span><img class="logos" src="../../../assets/media/logoPencil.png"></span>
+						</button>
 					</div>
-
-					<div class="column" style="width: 25%;">
-						<!-- <img [src]="miP.imagen" alt="" class="imgEducacion border"> -->
-						<img [src]="miP.imagen" alt="" id="imgEducacion">
-					</div>
-					<div class="column" style="width: 75%;">
-						<p><b>Escuela:</b> {{miP.escuela}}</p>
-						<p><b>Titulo:</b> {{miP.titulo}}</p>
-						<p><b>Carrera:</b>{{miP.carrera}}</p>
-						<p><b>Puntaje:</b>{{miP.puntaje}}</p>
-						<p><b>Inicio: </b>{{miP.inicio}}</p>
-						<p><b>Fin: </b>{{miP.fin}}</p>
+					<div class="p-1">
+						<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="Eliminar educación..."><span><img
+									class="logos" src="../../../assets/media/logoDelete.png"></span></button>
 					</div>
 				</div>
+
+				<div class="column" style="width: 25%; margin-bottom: 10px;">
+					<!-- <img [src]="miP.imagen" alt="" class="imgEducacion border"> -->
+					<img [src]="miP.imagen" alt="" id="imgEducacion">
+				</div>
+				<div class="column" style="width: 75%;">
+					<p><b>Escuela:</b> {{miP.escuela}}</p>
+					<p><b>Titulo:</b> {{miP.titulo}}</p>
+					<p><b>Carrera:</b>{{miP.carrera}}</p>
+					<p><b>Puntaje:</b>{{miP.puntaje}}</p>
+					<p><b>Inicio: </b>{{miP.inicio}}</p>
+					<p><b>Fin: </b>{{miP.fin}}</p>
+				</div>
+			</div>
 		</li>
 	</ul>
 </div>

@@ -1,25 +1,31 @@
 <div id="skillsFirstCard">
-	<h1 class="align-items-center text-center shadow">Skills</h1>
-		<button class="btn-agregar">
-			<span><img src="../../../assets/media/logoAdd.png" alt="Agregar Educación..."
-					class="logos mt-1 bg-blue rounded-circle">AGREGAR SKILLS</span>
-		</button>
+	<div class="cHeader">
+		<div class="cTitle column justify-content-start">
+			<h1>Skills</h1>
+		</div>
+		<div class="cAdd"><!-- class="column justify-content-end" -->
+			<button class="btn-agregar">
+				<span><img src="../../../assets/media/logoAdd.png" alt="Agregar skills..."
+						class="logos mt-1 bg-blue rounded-circle">AGREGAR SKILLS</span>
+			</button>
+		</div>
+	</div>
 	<ul>
 		<li *ngFor="let miP of miPortfolio " onclick="selectItem(miP);">
-			<div class="row box1">
+			<div class="cCard row box1">
 				<div class="d-flex justify-content-end border">
 					<div class="p-1">
-						<button class="btn p-0 m-1"><span><img class="logos"
-									src="../../../assets/media/logoPencil.png"></span>
+						<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="
+						Editar skills..."><span><img class="logos" src="../../../assets/media/logoPencil.png"></span>
 						</button>
 					</div>
 					<div class="p-1">
-						<button class="btn p-0 m-1"><span><img class="logos"
-									src="../../../assets/media/logoDelete.png"></span></button>
+						<button class="btn p-0 m-1" data-bs-toggle="tooltip" title="
+						Eliminar skills..."><span><img class="logos" src="../../../assets/media/logoDelete.png"></span></button>
 					</div>
 				</div>
 
-				<div class="column" style="width: 25%; padding-bottom: 3px;">
+				<div class="column" style="width: 25%; margin-bottom: 10px;">
 					<img [src]="miP.imagen" alt="" id="imgSkill">
 				</div>
 				<div class="column align-self-center" style="width: 75%;">

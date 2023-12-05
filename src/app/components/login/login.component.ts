@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 	}
 
 	onLogin(event: Event) {
-		// event.preventDefault;
+		event.preventDefault;
 		this.autenticacionService.login(this.form.value).subscribe(data => {
 			console.log("Archivo Login Component , seteo del token: ", data.token);
 			sessionStorage.setItem('token', data.token);
