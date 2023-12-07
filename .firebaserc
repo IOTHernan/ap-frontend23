@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ap-frontend23"
+  },
+  "targets": {
+    "ap-frontend23": {
+      "hosting": {
+        "ap-frontend23": [
+          "ap-frontend23"
+        ]
+      }
+    }
   }
 }

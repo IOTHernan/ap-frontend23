@@ -24,6 +24,8 @@ export class PortfolioService {
 	
 	obtenerDatos(): Observable<any> {
 		// console.log('El servicio portfolio está corriendo');
+		console.log(this.http.get<any>(this.url + 'acerca_de'));
+		
 		return this.http.get<any>("./assets/data/data.json");
 	}
 
@@ -85,12 +87,12 @@ export class PortfolioService {
 	/* postAcercaDe(AcercaDe: any): Observable<any> {
 		let AcercaDeJSON = JSON.stringify(AcercaDe);
 		return this.http.post<any>(this.url + 'acerca_de', AcercaDeJSON, { headers: this.headers });
-	}
+	}*/
 
 	postEducacion(Educacion: IEducacion): Observable<IEducacion> {
 		return this.http.post<IEducacion>(this.url + 'educacion', Educacion, { headers: this.headers });
 	}
-
+/*
 	postExperiencia(Experiencia: IExperiencia): Observable<IExperiencia> {
 		return this.http.post<IExperiencia>(this.url + 'experiencias', Experiencia, { headers: this.headers });
 	}
@@ -114,11 +116,11 @@ export class PortfolioService {
 	putExperiencia(Experiencia: IExperiencia, i: Number): Observable<IExperiencia> {
 		return this.http.put<IExperiencia>(this.url + 'experiencias/' + i, Experiencia, { headers: this.headers });
 	}
-
+*/
 	putEducacion(Educacion: IEducacion, id: Number): Observable<IEducacion> {
 		return this.http.put<IEducacion>(this.url + 'educacion/' + id, Educacion, { headers: this.headers });
 	}
-
+/*
 	putProyecto(Proyecto: IProyectos, id: Number): Observable<IProyectos> {
 		return this.http.put<IProyectos>(this.url + 'proyectos/' + id, Proyecto, { headers: this.headers });
 	}
@@ -135,11 +137,14 @@ export class PortfolioService {
 /* 	deleteAcercaDe(id: Number): Observable<any> {
 		return this.http.delete<any>(this.url + 'acerca_de/' + id, { headers: this.headers });
 	}
-
+*/
 	deleteEducacion(id: Number): Observable<IEducacion> {
+		console.log(this.http.delete<IEducacion>(this.url + 'educacion/' + id, { headers: this.headers }));
+		
 		return this.http.delete<IEducacion>(this.url + 'educacion/' + id, { headers: this.headers });
 	}
 
+	/*
 	deleteExperiencia(id: Number): Observable<IExperiencia> {
 		return this.http.delete<IExperiencia>(this.url + 'experiencias/' + id, { headers: this.headers });
 	}

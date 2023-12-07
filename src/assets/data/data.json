@@ -43,7 +43,7 @@
 					"escuela": "Escuela de Educación Media Nº 24",
 					"titulo": "Bachiller Contable",
 					"imagen": "https://www.ort.edu.ar/img/LogoOrtArgWeb2017.jpg",
-					"carrera": "Bachiller",
+					"detalles": "Bachiller",
 					"puntaje": 100,
 					"inicio": "1990",
 					"fin": "1995"
@@ -52,7 +52,7 @@
 					"escuela": "Se Programar",
 					"titulo": "Se Programar",
 					"imagen": "https://www.ort.edu.ar/img/LogoOrtArgWeb2017.jpg",
-					"carrera": "Desarrollo de Software",
+					"detalles": "Desarrollo de Software",
 					"puntaje": 82,
 					"inicio": "2021",
 					"fin": "2021"
@@ -60,9 +60,8 @@
 				{
 					"escuela": "Argentina Programa, MINDHUB",
 					"titulo": "FullStack FrontEnd Jr.",
-				
 					"imagen": "../../../assets/media/chemindhub.png",
-					"carrera": "Programación web",
+					"detalles": "Programación web",
 					"puntaje": 70,
 					"inicio": "2023",
 					"fin": "2023"
