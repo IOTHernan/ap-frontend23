@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -42,6 +45,7 @@ import { PortfolioService } from './services/portfolio.service';
 	ReactiveFormsModule,
     HttpClientModule,
 	FormsModule,
+	AngularFireModule.initializeApp(environment.firebaseConfig),
     NgCircleProgressModule.forRoot({})
   ],
   providers: [PortfolioService, { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}  ],

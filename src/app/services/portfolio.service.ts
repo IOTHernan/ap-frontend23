@@ -96,11 +96,11 @@ export class PortfolioService {
 	postExperiencia(Experiencia: IExperiencia): Observable<IExperiencia> {
 		return this.http.post<IExperiencia>(this.url + 'experiencias', Experiencia, { headers: this.headers });
 	}
-
+*/
 	postProyecto(Proyecto: IProyectos): Observable<IProyectos> {
 		return this.http.post<IProyectos>(this.url + 'proyectos', Proyecto, { headers: this.headers });
 	}
-
+/*
 	postSkill(Skill: ISkill): Observable<ISkill> {
 		return this.http.post<ISkill>(this.url + 'skills', Skill, { headers: this.headers });
 	}
@@ -120,11 +120,11 @@ export class PortfolioService {
 	putEducacion(Educacion: IEducacion, id: Number): Observable<IEducacion> {
 		return this.http.put<IEducacion>(this.url + 'educacion/' + id, Educacion, { headers: this.headers });
 	}
-/*
+
 	putProyecto(Proyecto: IProyectos, id: Number): Observable<IProyectos> {
 		return this.http.put<IProyectos>(this.url + 'proyectos/' + id, Proyecto, { headers: this.headers });
 	}
-
+/*
 	putSkill(Skill: ISkill, id: Number): Observable<ISkill> {
 		return this.http.put<ISkill>(this.url + 'skills/' + id, Skill, { headers: this.headers });
 	}
@@ -144,7 +144,7 @@ export class PortfolioService {
 		return this.http.delete<IEducacion>(this.url + 'educacion/' + id, { headers: this.headers });
 	}
 
-	/*
+	
 	deleteExperiencia(id: Number): Observable<IExperiencia> {
 		return this.http.delete<IExperiencia>(this.url + 'experiencias/' + id, { headers: this.headers });
 	}
@@ -152,7 +152,7 @@ export class PortfolioService {
 	deleteProyecto(id: Number): Observable<IProyectos> {
 		return this.http.delete<IProyectos>(this.url + 'proyectos/' + id, { headers: this.headers });
 	}
-
+/*
 	deleteSkill(id: Number): Observable<ISkill> {
 		return this.http.delete<ISkill>(this.url + 'skills/' + id, { headers: this.headers });
 	}
