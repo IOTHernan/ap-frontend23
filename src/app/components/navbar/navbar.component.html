@@ -71,11 +71,12 @@
 
 	<div class="colunma d-flex justify-content-center align-items-center">
 		<div *ngIf="portfolioActive === false">
-			<button class="btn btn-info btn-md fw-bold shadow-lg buttonx"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Abrir sesión..." routerLink="/portfolio">MODO EDICIÓN</button>
+			<button class="btn btn-info btn-md fw-bold shadow-lg buttonx" data-bs-toggle="tooltip"
+				data-bs-placement="bottom" title="Abrir sesión..." routerLink="/portfolio">MODO EDICIÓN</button>
 		</div>
 		<div *ngIf="portfolioActive === true">
-			<button class="btn btn-dark rounded text-white shadow-lg buttonx" (click)="logout($event)" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cerrar sesión...">TERMINAR EDICIÓN</button>
-			<!-- <button class="btn btn-info text-white fw-bold shadow-lg" routerLink="/login">Login</button> -->
+			<button class="btn btn-dark rounded text-white shadow-lg buttonx" (click)="logout($event)"
+				data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cerrar sesión...">TERMINAR EDICIÓN</button>
 		</div>
 	</div>
 </div>

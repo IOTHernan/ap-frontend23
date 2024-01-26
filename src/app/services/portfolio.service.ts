@@ -12,7 +12,7 @@ import { Iacercade } from '../interfaces/iacercade';
 	providedIn: 'root'
 })
 export class PortfolioService {
-	url="https://argentina-programa-portafolio.heroku.com/api/v1/";
+	url="http://localhost:8080";
 
 	// Headers para POST, PUT Y DELETE.
 	headers = new HttpHeaders({
@@ -40,7 +40,6 @@ export class PortfolioService {
 	obtenerDatosEducacion(): Observable<IEducacion> {
 		return this.http.get<IEducacion>(this.url + 'educacion');
 	}
-
 
 	obtenerDatosExperiencias(): Observable<IExperiencia> {
 		return this.http.get<IExperiencia>(this.url + 'experiencias');
