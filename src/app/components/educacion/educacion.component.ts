@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
+import { IEducacion } from 'src/app/interfaces/ieducacion';
+import { PortfolioService } from '../../services/portfolio';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
@@ -8,7 +9,17 @@ import Swal from 'sweetalert2';
 	templateUrl: './educacion.component.html',
 	styleUrls: ['./educacion.component.css']
 })
+
 export class EducacionComponent implements OnInit {
+	@Input() isLogged!: boolean;
+	@Input() idPerso!: number;
+	@Input() listaEdu: IEducacion[] = [];
+
+	@Output() recargandoPortfolio = new EventEmitter<any>();
+
+	educacion!: IEducacion;
+	tituloModal: string = "";
+	
 	miPortfolio: any;
 	modoEdicion: boolean = false;
     modoNuevoRegistro: boolean = false;

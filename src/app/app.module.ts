@@ -22,33 +22,34 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { InterceptorService } from './services/interceptor.service';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PortfolioService } from './services/portfolio.service';
+import { PortfolioService } from './services/portfolio';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    BannerComponent,
-    NavbarComponent,
-    ExperienciaComponent,
-    EducacionComponent,
-    PortfolioComponent,
-    SkillsComponent,
-    SoftskillsComponent,
-    ProyectosComponent,
-    PageNotFoundComponent,
-    LoginComponent,
-    AcercadeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-	ReactiveFormsModule,
-    HttpClientModule,
-	FormsModule,
-	AngularFireModule.initializeApp(environment.firebaseConfig),
-    NgCircleProgressModule.forRoot({})
-  ],
-  providers: [PortfolioService, { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}  ],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		FooterComponent,
+		BannerComponent,
+		NavbarComponent,
+		ExperienciaComponent,
+		EducacionComponent,
+		PortfolioComponent,
+		SkillsComponent,
+		SoftskillsComponent,
+		ProyectosComponent,
+		PageNotFoundComponent,
+		LoginComponent,
+		AcercadeComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+		FormsModule,
+		AngularFireModule.initializeApp(environment.firebaseConfig),
+		NgCircleProgressModule.forRoot({})
+	],
+	providers: [PortfolioService, { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

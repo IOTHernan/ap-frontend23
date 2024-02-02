@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { PortfolioService } from '../../services/portfolio';
 
 @Component({
   selector: 'app-skills',
@@ -8,6 +8,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class SkillsComponent  implements OnInit {
   miPortfolio: any;
+  @Input() isLogged!: boolean;
+  @Input() idPerso!: number;
+  @Input() listaSoftSkills: [] = [];
   constructor(private portfolioService: PortfolioService) {
     
   }

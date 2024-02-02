@@ -1,3 +1,109 @@
+/* import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IEducacion } from '../interfaces/ieducacion';
+import { IExperiencia } from '../interfaces/iexperiencia';
+import { HabBlandaDTO } from '../services/hab-blanda-dto';
+import { HabTecnicaDTO } from '../services/hab-tecnica-dto';
+import { PersoDTO } from '../services/persoDTO';
+import { IProyectos } from '../interfaces/iproyectos';
+import { RespuestaDTO } from '../services/respuest-dto';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class PortfolioService {
+
+  //DATA JSON
+  urlBackend: string = "src/assets/data/data.json";
+
+  //esta url sale del @RequestMapping del Controller del backend "http://localhost:8080/"
+//  urlBackend: string = "https://solesasia-portfolio.onrender.com/"
+
+  constructor(private http:HttpClient) { }
+
+  // LM Porfolio //
+
+  public obtenerDatos():Observable<any>{
+    return this.http.get<any>(this.urlBackend + 'portfolio');
+  }
+
+  public editarPersona(perso: PersoDTO) : Observable<RespuestaDTO>{
+    return this.http.put<RespuestaDTO>(this.urlBackend + 'editarPersona', perso);
+  }
+  
+  // ABM Educacion //
+
+  public agregarEdu(edu:IEducacion): Observable<RespuestaDTO> {
+    return this.http.post<RespuestaDTO>(this.urlBackend + 'nuevaEdu', edu);    
+  }
+
+  public editarEdu(id: number, edu: IEducacion): Observable<RespuestaDTO> {
+    return this.http.put<RespuestaDTO>(this.urlBackend + `editarEdu/${id}`, edu);
+  }
+
+  public borrarEdu(id: number): Observable<any> {
+    return this.http.delete<any>(this.urlBackend + `borrarEdu/${id}`);
+  }
+
+  // ABM Experiencia //
+
+  public agregarExpe(expe: IExperiencia): Observable<RespuestaDTO> {
+    return this.http.post<RespuestaDTO>(this.urlBackend + 'nuevaExpe', expe);    
+  }
+
+  public editarExpe(id: number, expe: IExperiencia): Observable<RespuestaDTO> {
+    return this.http.put<RespuestaDTO>(this.urlBackend + `editarExpe/${id}`, expe);
+  }
+
+  public borrarExpe(id :number): Observable<any> {
+    return this.http.delete<any>(this.urlBackend + `borrarExpe/${id}`);
+  }
+
+  // ABM Habilidad Tecnica //
+
+  public agregarHabTecnica(habTec: HabTecnicaDTO): Observable<RespuestaDTO> {
+    return this.http.post<RespuestaDTO>(this.urlBackend + 'nuevaHabTecnica', habTec);    
+  }
+
+  public editarHabTecnica(id: number, habTec :HabTecnicaDTO): Observable<RespuestaDTO> {
+    return this.http.put<RespuestaDTO>(this.urlBackend + `editarHabTecnica/${id}`, habTec);
+  }
+
+  public borrarHabTecnica(id: number): Observable<any> {
+    return this.http.delete<any>(this.urlBackend + `borrarHabTecnica/${id}`);
+  }
+
+  // ABM Habilidad Blanda //
+
+  public agregarHabBlanda(habBlan: HabBlandaDTO): Observable<any> {
+    return this.http.post<any>(this.urlBackend + 'nuevaHabBlanda', habBlan);    
+  }
+
+  public editarHabBlanda(id: number, habBlan :HabBlandaDTO): Observable<any> {
+    return this.http.put<any>(this.urlBackend + `editarHabBlanda/${id}`, habBlan);
+  }
+
+  public borrarHabBlanda(id: number): Observable<any> {
+    return this.http.delete<any>(this.urlBackend + `borrarHabBlanda/${id}`);
+  }
+ */
+  // ABM Proyecto //
+/* 
+  public agregarProyecto(proye:IProyectos): Observable<any> {
+    return this.http.post<any>(this.urlBackend + 'nuevoProyecto', proye);    
+  }
+
+  public editarProyecto(id :number, proye :IProyectos): Observable<any> {
+    return this.http.put<any>(this.urlBackend + `editarProyecto/${id}`, proye);
+  }
+
+  public borrarProyecto(id :number): Observable<any> {
+    return this.http.delete<any>(this.urlBackend + `borrarProyecto/${id}`);
+  }
+
+} */
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -7,13 +113,14 @@ import { IEducacion } from './../interfaces/ieducacion';
 import { IExperiencia } from './../interfaces/iexperiencia';
 import { IProyectos } from '../interfaces/iproyectos';
 import { Iacercade } from '../interfaces/iacercade';
+import { IPersonas } from '../interfaces/ipersonas';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class PortfolioService {
-	url="http://localhost:8080";
-
+//	url="http://localhost:8080";
+	url = "./assets/data/data.json";
 	// Headers para POST, PUT Y DELETE.
 	headers = new HttpHeaders({
 		'Content-Type': 'application/json',
@@ -158,4 +265,3 @@ export class PortfolioService {
  */
 
 }
-

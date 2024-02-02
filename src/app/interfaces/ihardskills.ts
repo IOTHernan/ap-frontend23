@@ -1,4 +1,4 @@
-export class ISkill {
+export class IHardSkills {
 	"id": number;
 	"descripcion": string;
 	"imagen": string;

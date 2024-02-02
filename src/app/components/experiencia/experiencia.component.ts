@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { Component, Input, Output, OnInit } from '@angular/core';
+import { PortfolioService } from '../../services/portfolio';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
@@ -15,8 +15,10 @@ export class ExperienciaComponent implements OnInit {
     i!: number;
     editID!: number;
     form: FormGroup;
+	@Input() isLogged!: boolean;
 	
-	constructor(private datosPortfolio: PortfolioService) {
+
+		constructor(private datosPortfolio: PortfolioService) {
 		this.form = new FormGroup({
             ubicacion: new FormControl(['', [Validators.required, Validators.minLength(2)]]),
             puesto: new FormControl(['', [Validators.required, Validators.minLength(2)]]),

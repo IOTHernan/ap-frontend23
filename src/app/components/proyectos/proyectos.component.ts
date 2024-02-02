@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-/* import { IProyectos } from 'src/app/interfaces/iproyectos'; */
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { IProyectos } from 'src/app/interfaces/iproyectos';
+import { PortfolioService } from '../../services/portfolio';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -16,7 +16,7 @@ export class ProyectosComponent implements OnInit {
     i!: number;
     editID!: number;
     form: FormGroup;
-
+	@Input() isLogged!: boolean;
 	constructor(private datosPortfolio: PortfolioService) {
 		this.form = new FormGroup({
 			titulo: new FormControl(['', [Validators.required, Validators.maxLength(2)]]),
