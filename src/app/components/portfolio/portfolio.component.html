@@ -1,38 +1,23 @@
-<!--Barra de navegacion-->
-<app-navbar
-    [isLogged]="isLogged"
-    
-    (recargandoPortfolio)="cargarVista()">
+<app-navbar [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-navbar>
 <!-- [persona]="miPortfolio.persona" -->
 <!--Header-->
 <!-- <app-navbar></app-navbar> -->
 <!-- [persona]="miPortfolio.personas"> -->
 <!--Sección Sobre Mí-->
-<app-acercade
-    [isLogged]="isLogged"
-    
-    (recargandoPortfolio)="cargarVista()">
+<app-acercade [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-acercade>
 /* [persona]="miPortfolio.personas" */
 <!--Sección Proyectos-->
-<app-educacion
-	[isLogged]="isLogged"
-	
-	(recargandoPortfolio)="cargarVista()">
+<app-banner></app-banner>
+<app-educacion [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-educacion>
 /* [idPerso]="miPortfolio.personas.id"
 [listaProyectos]="miPortfolio.proyectos" */
 <!--Sección Experiencia-->
-<app-experiencia
-[isLogged]="isLogged"    
-
-(recargandoPortfolio)="cargarVista()">
+<app-experiencia [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-experiencia>
-<app-proyectos
-	[isLogged]="isLogged"
-	
-	(recargandoPortfolio)="cargarVista()">
+<app-proyectos [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-proyectos>
 <!--[idPerso]="miPortfolio.persona.id"
     [listaExpe]="miPortfolio.experiencias"-->
@@ -40,10 +25,7 @@
 <!--[idPerso]="miPortfolio.persona.id"
     [listaEdu]="miPortfolio.educaciones"-->
 <!--Sección Habilidades-->
-<app-skills
-    [isLogged]="isLogged"
-    
-    (recargandoPortfolio)="cargarVista()">
+<app-skills [isLogged]="isLogged" (recargandoPortfolio)="cargarVista()">
 </app-skills>
 <!-- [idPerso]="miPortfolio.personas.id"    
 [listaSkills]="miPortfolio.ISkills"

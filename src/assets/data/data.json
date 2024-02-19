@@ -42,13 +42,15 @@
 	],
 	"educacion": [
 		{
+			"id":1,
 			"escuela": "Escuela de Educación Media Nº 24",
 			"titulo": "Bachiller Contable",
 			"imagen": "https://www.ort.edu.ar/img/LogoOrtArgWeb2017.jpg",
 			"detalles": "Bachiller",
 			"puntaje": 100,
 			"inicio": "1990",
-			"fin": "1995"
+			"fin": "1995",
+			"personaId": null
 		},
 		{
 			"escuela": "Se Programar",
@@ -57,7 +59,8 @@
 			"detalles": "Desarrollo de Software",
 			"puntaje": 82,
 			"inicio": "2021",
-			"fin": "2021"
+			"fin": "2021",
+			"personaId": null
 		},
 		{
 			"escuela": "Argentina Programa, MINDHUB",
@@ -66,7 +69,8 @@
 			"detalles": "Programación web",
 			"puntaje": 70,
 			"inicio": "2023",
-			"fin": "2023"
+			"fin": "2023",
+			"personaId": null
 		}
 	],
 	"experiencia": [

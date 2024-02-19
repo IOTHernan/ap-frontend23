@@ -11,7 +11,7 @@ export const environment = {
 		storageBucket: "ap-frontend23.appspot.com",
 		messagingSenderId: "322639668800",
 		appId: "1:322639668800:web:46caac150435e629cea1a5"
-	}
+		}
 };
 
 // Inicializa la aplicación de Firebase con la configuración proporcionada
